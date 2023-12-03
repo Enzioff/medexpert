@@ -1,0 +1,23 @@
+.section {
+  position: relative;
+
+  &--top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+
+    @include r(1200) {
+      position: static;
+    }
+  }
+
+  &--visible {
+    overflow: visible;
+  }
+
+  &--gray {
+    background-color: $gray;
+  }
+}

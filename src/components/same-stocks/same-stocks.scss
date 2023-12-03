@@ -1,0 +1,15 @@
+.same-stocks {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 40px;
+
+  @include r(1200) {
+    display: none;
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 30px;
+  }
+}

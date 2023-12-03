@@ -1,0 +1,29 @@
+.filter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    cursor: pointer;
+  }
+
+  &__icon {
+    display: flex;
+    width: 14px;
+    height: 14px;
+  }
+
+  &__reset {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    color: $primary-light;
+    cursor: pointer;
+  }
+}

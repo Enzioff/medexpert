@@ -1,0 +1,29 @@
+.article-time {
+  display: flex;
+  width: 100%;
+  border-radius: 5px;
+  background: $gray;
+  padding: 22px 20px;
+  gap: 20px;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__icon {
+    display: flex;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  &__text {
+
+  }
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body">
+
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+    <section class="section section--top">
+        <div class="container">
+            <div class="main-search">
+                <form action="#" class="main-search__form">
+                    <svg class="main-search__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
+                    </svg>
+                    <input type="text" class="input" placeholder="Поиск по сайту">
+                    <button class="main-search__button button button--search">Найти</button>
+                </form>
+            </div>
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <span class="breadcrumbs__link">Акции</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section section--gray">
+        <div class="container">
+            <div class="intro">
+                <div class="intro__info">
+                    <h1 class="main-title">Справка для ФНС</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section pt-60 pb-100">
+        <div class="container">
+            <div class="head mb-30">
+                <h3 class="title--small">Уважаемые пациенты!</h3>
+                <p class="text">Получить справку для ФНС для возврата НДФЛ<br>вы можете следующими способами:</p>
+            </div>
+            <div class="columns mb-60">
+                <div class="columns__col columns__col--3 columns__col-mob--4">
+                    <article class="article-card article-card--auto-size">
+                        <svg class="article-card__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-mail"></use>
+                        </svg>
+                        <div class="article-card__info">
+                            <h3 class="article-card__title">В печатном виде лично в медицинском центре,</h3>
+                            <p class="article-card__text">
+                                в котором были оказаны услуги, предоставив:
+                            </p>
+                            <p class="article-card__text">
+                                - документ, удостоверяющий личность;<br>
+                                - <a href="#">заявление</a> на получение справки по форме организации.
+                            </p>
+                            <p class="article-card__text">При личном визите справку вы получите в течение 2-3 дней.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="columns__col columns__col--3 columns__col-mob--4">
+                    <article class="article-card article-card--auto-size">
+                        <svg class="article-card__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-mail"></use>
+                        </svg>
+                        <div class="article-card__info">
+                            <h3 class="article-card__title">E-mail</h3>
+                            <p class="article-card__text">
+                                Заполните форму на сайте.<br>
+                                Готовность справки 3 рабочих дня, забрать вы ее сможете в удобное для вас время.
+                            </p>
+                        </div>
+                        <a href="#form-extended" class="button button--auto" data-fancybox data-src="#form-extended">Заполнить форму</a>
+                    </article>
+                </div>
+            </div>
+            <div class="editor">
+                <h3>Обращаем Ваше внимание:</h3>
+                <br>
+                <p>
+                    Вы также можете заказать и получить справку для налогового вычета за близких родственников
+                    (супруга/супругу, детей, родителей, подопечных) (ст. 219 п.1, подп.3 НК РФ). Для этого нужно
+                    обратиться в медицинский центр лично, предоставив соответствующие документы для подтверждения
+                    степени родства и соблюдения требований законодательства о защите персональных данных, передаваемых
+                    третьим лицам (Федеральный закон от 27.07.2006 N 152-ФЗ "О персональных данных"):
+                    - свидетельство о браке (если налогоплательщик и пациент – супруги);
+                    - свидетельство о рождении ребенка (если налогоплательщик – родитель, а пациент — ребенок до 18
+                    лет);
+                    - свидетельство о рождении налогоплательщика (если пациент – родитель).
+                </p>
+                <br>
+                <p>
+                    Просим отнестись с понимаем, мы соблюдаем требования законодательства. Копии с документов мы не
+                    снимаем.
+                    Готовую справку мы можем продублировать, отправив вам на электронную почту (на nalog.ru допускается
+                    оформление возврата налогового вычета электронно) либо выдать печатный экземпляр в том медицинском
+                    центре, в котором вам были оказаны услуги.
+                </p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<div class="modal-content modal-content--clear" id="form-extended">
+    <div class="feedback">
+        <div class="feedback__header">
+            <h3 class="feedback__title">Заполните форму</h3>
+            <p class="feedback__text">Заполните форму ниже, чтобы наш оператор смог дать вам обратную связь</p>
+        </div>
+        <form class="form form--extended" data-form>
+            <fieldset class="form__wrapper">
+                <span class="form__input">
+                    <svg class="form__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-person"></use>
+                    </svg>
+                    <input type="text" class="input" placeholder="ФИО пациента">
+                </span>
+                <span class="form__input">
+                    <input type="text" class="input" placeholder="Дата рождения">
+                </span>
+                <span class="form__input">
+                    <svg class="form__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-phone"></use>
+                    </svg>
+                    <input type="tel" class="input" placeholder="+7 ( ___ ) ___-__-__">
+                </span>
+                <span class="form__input">
+                    <input type="text" class="input" placeholder="ФИО налогоплательщика">
+                </span>
+                <span class="form__input">
+                    <svg class="form__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-mail"></use>
+                    </svg>
+                    <input type="email" class="input" placeholder="E-mail">
+                </span>
+                <span class="form__input">
+                    <input type="text" class="input" placeholder="ИНН налогоплательщика">
+                </span>
+            </fieldset>
+            <div class="form__element">
+                <h3 class="form__title">Налоговый период:</h3>
+                <label class="form__item form__item--accept">
+                    <input type="radio" class="check" name="YEAR">
+                    <span>2023</span>
+                </label>
+                <label class="form__item form__item--accept">
+                    <input type="radio" class="check" name="YEAR">
+                    <span>2022</span>
+                </label>
+                <label class="form__item form__item--accept">
+                    <input type="radio" class="check" name="YEAR">
+                    <span>2021</span>
+                </label>
+                <label class="form__item form__item--accept">
+                    <input type="radio" class="check" name="YEAR">
+                    <span>2020</span>
+                </label>
+            </div>
+            <div class="form__element">
+                <h3 class="form__title">Способ получения справки ФНС:</h3>
+                <label class="form__item form__item--accept">
+                    <input type="radio" class="check" name="DELIVERY">
+                    <span>E-mail</span>
+                </label>
+                <label class="form__item form__item--accept">
+                    <input type="radio" class="check" name="DELIVERY">
+                    <span>Лично в медцентре</span>
+                </label>
+            </div>
+            <div class="form__element">
+                <h3 class="form__title">Уведомить о готовности звонком:</h3>
+                <label class="form__item form__item--accept">
+                    <input type="radio" class="check" name="SUBSCRIBE">
+                    <span>Да</span>
+                </label>
+                <label class="form__item form__item--accept">
+                    <input type="radio" class="check" name="SUBSCRIBE">
+                    <span>Нет</span>
+                </label>
+            </div>
+            <label class="form__item">
+                <textarea name="COMMENT" placeholder="Ваш комментарий"></textarea>
+            </label>
+            <label class="form__item form__item--accept" data-accept-form>
+                <input type="checkbox" class="check" data-accept>
+                <span>Нажимая кнопку отправить вы соглашаетесь с Политикой обработки персональных данных</span>
+            </label>
+            <label class="form__item">
+                <button class="form__button button" type="submit">Отправить</button>
+            </label>
+        </form>
+    </div>
+</div>
+
+<%= htmlWebpackPlugin.options.sectionFooter %>
+
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+
+</html>

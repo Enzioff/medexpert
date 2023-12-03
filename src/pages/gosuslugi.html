@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body">
+
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+    <section class="section section--top">
+        <div class="container">
+            <div class="main-search">
+                <form action="#" class="main-search__form">
+                    <svg class="main-search__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
+                    </svg>
+                    <input type="text" class="input" placeholder="Поиск по сайту">
+                    <button class="main-search__button button button--search">Найти</button>
+                </form>
+            </div>
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <span class="breadcrumbs__link">Акции</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section section--gray">
+        <div class="container">
+            <div class="intro intro--main">
+                <div class="intro__info">
+                    <h1 class="main-title">Результат на ГосУслугах </h1>
+                    <p class="intro__text intro__text--fixed-size">На этой странице вы можете получить полную информацию
+                        о том, как полуить информацию о результате на ГосУслугах.</p>
+                </div>
+                <picture class="intro__picture intro__picture--blackout">
+                    <img src="./assets/images/intro-doctor.png" alt="">
+                </picture>
+            </div>
+        </div>
+    </section>
+    <section class="section pt-60 pb-100">
+        <div class="container">
+            <div class="editor editor--default mb-40">
+                <h3>Общая информация:</h3>
+                <br>
+                <ol>
+                    <li>
+                        При оформлении заказа обратите внимание администратора на то, что Вам необходимо передать
+                        сведения о результатах на ГосУслуги.
+                    </li>
+                    <li>
+                        Сведения о результате передаются по согласию физического лица, выраженного посредством
+                        подписания договора о предоставлении платных медицинских услуг, в котором размещены
+                        соответствующие условия. В противном случае Вам будет предложено подписать Отказ от передачи
+                        сведений.
+                    </li>
+                    <li>
+                        На портал ГосУслуг передаётся информация о результате: загрузка бланка результата в формате
+                        .pdf – невозможна.
+                    </li>
+                    <li>
+                        Сведения о результате передаются только если пациент имеет на ГосУслугах подтверждённую
+                        учётную запись. Все QR-коды и сертификаты размещены в разделе личного кабинета «Сведения об
+                        иммунизации COVID-19».
+                    </li>
+                    <li>
+                        Сведения о результатах детей (ни ПЦР тестов, ни анализов на антитела) не передаются на портал
+                        ГосУслуг.
+                    </li>
+                    <li>
+                        QR-код на печатном бланке результата СИТИЛАБ предназначен для подтверждения подлинности
+                        результата и принадлежности его выполнения в лаборатории СИТИЛАБ. Данный QR-код не может быть
+                        использован для посещения COVID-free зон, музеев, театров и т.п.
+                    </li>
+                </ol>
+                <br>
+                <br>
+                <br>
+                <h3>Информация по результатам<br>исследований на антитела</h3>
+                <br>
+                <p>
+                    Информация по результатам исследований на антитела.
+                </p>
+                <ol>
+                    <li>
+                        QR-код на результате исследования на антитела не формируется.
+                    </li>
+                    <li>
+                        Вне зависимости от того, какое исследование антител было заказано и выполнено (качественное,
+                        количественное или полуколичественное) сведения о результатах на антитела отобразятся на
+                        ГосУслугах под универсальным заголовком «качественное исследование». Это – требование по
+                        передаче данных Единого портала государственных и муниципальных услуг, поскольку для получения
+                        QR-кода количество антител и их уровень значения не имеют. Главное – их наличие, т.е.
+                        качественный результат.
+                    </li>
+                    <li>
+                        Тем не менее, сведения о результатах исследований на антитела Лаборатория СИТИЛАБ передаёт
+                        несколькими строками:
+                    </li>
+                </ol>
+                <br>
+                <ul>
+                    <li>качественное исследование – одной строкой, с результатом «ОБНАРУЖЕНО»<br> или «НЕ ОБНАРУЖЕНО»;
+                    </li>
+                    <li>
+                        количественное исследование – двумя строками: первой - с качественным<br> результатом
+                        «ОБНАРУЖЕНО»
+                        или «НЕ ОБНАРУЖЕНО», второй с числовым,<br> количественным значением.
+                    </li>
+                </ul>
+                <br>
+                <br>
+                <br>
+                <h3>Информация по результатам<br>исследований на ПЦР</h3>
+                <br>
+                <p>
+                    Срок действия отрицательного результата ПЦР-исследования составляет 48 часов от времени результата
+                    лабораторного исследования на COVID-19 (дата и время выдачи результата передаются на ЕПГУ
+                    автоматически и отмечены на бланке результата в правом нижнем углу).
+                </p>
+            </div>
+            <strong class="text mb-25">
+                Вы можете скачать подробную инструкцию по ссылке:
+            </strong>
+            <button class="button button--more">
+                <svg class="button__icon button__icon--big">
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-spreadsheets"></use>
+                </svg>
+                <span>Памятка по отображению сведений о результатах на ГосУслугах</span>
+                <span class="button-arrow">
+                        <svg class="button-arrow__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow"></use>
+                        </svg>
+                    </span>
+            </button>
+        </div>
+    </section>
+</main>
+
+<%= htmlWebpackPlugin.options.sectionFooter %>
+
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+
+</html>

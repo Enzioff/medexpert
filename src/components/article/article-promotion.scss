@@ -1,0 +1,54 @@
+.article-promotion {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  grid-column: span 2;
+  padding: 52px 40px;
+  background-color: $blue-light;
+  border-radius: 10px;
+
+  @include r(1200) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 122px 35px 35px;
+    grid-column: span 1;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 129%;
+    color: $primary;
+
+    @include r(1200) {
+      font-size: 30px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    max-width: 330px;
+  }
+
+  &__picture {
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    display: flex;
+    width: 250px;
+    height: 250px;
+
+    @include r(1200) {
+      width: 140px;
+      height: 140px;
+      top: -15%;
+      bottom: initial;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body">
+
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+    <section class="section mb-40">
+        <div class="container">
+            <div class="main-search main-search--dark">
+                <form action="#" class="main-search__form">
+                    <svg class="main-search__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
+                    </svg>
+                    <input type="text" class="input" placeholder="Поиск по сайту">
+                    <button class="main-search__button button button--search">Найти</button>
+                </form>
+            </div>
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <span class="breadcrumbs__link">Акции</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section pb-100">
+        <div class="container">
+            <h1 class="main-title mb-30">Нормативные документы</h1>
+            <div class="editor editor--default mb-90">
+                <ul>
+                    <li>
+                        <a href="#">
+                            Распоряжение Правительства РФ от 12.10.2019 N 2406-р (ред. от 23.11.2020)
+                            Об утверждении перечня жизненно необходимых и важнейших лекарственных препаратов на 2020
+                            год, а также перечней лекарственных препаратов для медицинского применения и
+                            минимального ассортимента лекарственных препаратов, необходимых для оказания медицинской
+                            помощи> (с изм. и доп., вступ. в силу с 01.01.2021)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Публичная оферта на оказание медицинских услуг
+                        </a>
+                    </li>
+                </ul>
+                <br>
+                <p>
+                    Лаборатория осуществляет свою деятельность в соответствии с законами Российской Федерации на
+                    основании соответствующих документов, выданных компетентными органами. На данной странице можно
+                    ознакомиться с документами.
+                </p>
+            </div>
+            <button class="button button--more button--justify mb-60">
+                <svg class="button__icon button__icon--big">
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-spreadsheets"></use>
+                </svg>
+                <span>Бланк обращения</span>
+                <span class="button-arrow">
+                        <svg class="button-arrow__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow"></use>
+                        </svg>
+                    </span>
+            </button>
+            <div class="head w-770 mb-30">
+                <h2 class="title title--small">Нормативные документы:</h2>
+                <p class="text">
+                    Адреса и телефоны органа исполнительной власти субъекта РФ в сфере охраны здоровья граждан,
+                    территориального органа Федеральной службы по надзору в сфере здравоохранения и территориального
+                    органа Федеральной службы по надзору в сфере защиты прав потребителей и благополучия человека:
+                </p>
+            </div>
+            <div class="signature">
+                <h3 class="signature__title">Министерство здравоохранения<br> Калининградской области</h3>
+                <ul class="signature__list">
+                    <li class="signature__item">236000, г.Калининград. ул. Дм. Донского 1</li>
+                    <li class="signature__item">Email: uzao@gov39.ru</li>
+                    <li class="signature__item">Телефон: +7 (4012) 604-808</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+
+<%= htmlWebpackPlugin.options.sectionFooter %>
+
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+
+</html>

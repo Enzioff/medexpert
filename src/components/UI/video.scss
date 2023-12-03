@@ -1,0 +1,63 @@
+.video {
+  position: relative;
+
+  @include r(1200) {
+    display: flex;
+    min-height: 200px;
+  }
+
+  &--border &__picture {
+    border-radius: 5px;
+    border: 5px solid #8DA7B6;
+  }
+
+  &--fix-size {
+    height: 320px;
+  }
+
+  &__picture {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+
+    @include r(1200) {
+      height: auto;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      content: '';
+      display: flex;
+      background: rgba(14, 52, 73, 0.40);
+    }
+  }
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+
+    svg {
+      display: flex;
+      width: 61px;
+      height: 61px;
+    }
+  }
+}

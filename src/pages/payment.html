@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body">
+
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+    <section class="section mb-40">
+        <div class="container">
+            <div class="main-search main-search--dark">
+                <form action="#" class="main-search__form">
+                    <svg class="main-search__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
+                    </svg>
+                    <input type="text" class="input" placeholder="Поиск по сайту">
+                    <button class="main-search__button button button--search">Найти</button>
+                </form>
+            </div>
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <span class="breadcrumbs__link">Акции</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section pb-100">
+        <div class="container">
+            <h1 class="main-title mb-40">Оплата</h1>
+            <div class="payment">
+                <div class="payment__block">
+                    <h2 class="payment__title">Способы оплаты</h2>
+                    <p class="payment__text">
+                        Банковской картойПри оплате на сайте оплата производится банковской картой.Оплата происходит
+                        через ПАО СБЕРБАНК с использованием банковских карт следующих платёжных систем: МИР, VISA
+                        International, Mastercard Worldwide, JCB.
+                    </p>
+                </div>
+                <div class="payment__block">
+                    <h2 class="payment__title">Описание возврата средств за неполученные услуги</h2>
+                    <p class="payment__text">После оформления заказа и оплаты можно отказаться от получения услуг,
+                        написав обращение в форме обратной связи на сайте.
+                        В заголовке бланка напишите информацию о юр. лице и руководителе.</p>
+                    <button class="button button--more">
+                        <svg class="button__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-spreadsheets"></use>
+                        </svg>
+                        <span>Бланк обращения</span>
+                        <span class="button-arrow">
+                            <svg class="button-arrow__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="payment__block">
+                    <h2 class="payment__title">Описание возврата средств за неполученные услуги</h2>
+                    <p class="payment__text">
+                        Срок возврата денежных средств за неполученные услуги составляет от 5 до 30 дней с момента
+                        написания обращения.Возврат переведённых средств, производится на ваш банковский счёт в течение
+                        5-30 рабочих дней (срок зависит от банка, который выдал вашу банковскую карту).
+                    </p>
+                    <p class="payment__text">
+                        Информация о заказе и оплате отправляется на электронную почту, указанную при оплате заказа.
+                    </p>
+                    <button class="button w-240">Заполнить форму</button>
+                </div>
+                <div class="payment__block">
+                    <h2 class="payment__title">Описание процесса передачи данных</h2>
+                    <p class="payment__text">
+                        Для оплаты (ввода реквизитов Вашей карты) Вы будете перенаправлены на платёжный шлюз ПАО
+                        СБЕРБАНК. Соединение с платёжным шлюзом и передача информации осуществляется в защищённом режиме
+                        с использованием протокола шифрования SSL. В случае если Ваш банк поддерживает технологию
+                        безопасного проведения интернет-платежей Verified By Visa, MasterCard SecureCode, MIR Accept,
+                        J-Secure для проведения платежа также может потребоваться ввод специального пароля.
+                        Настоящий сайт поддерживает 256-битное шифрование. Конфиденциальность сообщаемой персональной
+                        информации обеспечивается ПАО СБЕРБАНК. Введённая информация не будет предоставлена третьим
+                        лицам за исключением случаев, предусмотренных законодательством РФ. Проведение платежей по
+                        банковским картам осуществляется в строгом соответствии с требованиями платёжных систем МИР,
+                        Visa Int., MasterCard Europe Sprl, JCB.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<%= htmlWebpackPlugin.options.sectionFooter %>
+
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+
+</html>

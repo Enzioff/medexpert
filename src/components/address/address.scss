@@ -1,0 +1,35 @@
+.address {
+  display: flex;
+  flex-direction: column;
+  padding: 31px 36px;
+  border-radius: 10px;
+  background: $gray;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+
+  &__info {
+    position: relative;
+  }
+
+  &__icon {
+    display: flex;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 110%;
+  }
+
+  &__link {
+    margin-bottom: 18px;
+  }
+}

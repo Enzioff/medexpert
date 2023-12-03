@@ -1,0 +1,35 @@
+.details {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-top: auto;
+
+  @include r(1200) {
+    position: static;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &--default &__item{
+    color: $primary;
+    font-weight: 300;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    color: rgba($primary, 0.40);
+  }
+
+  &__icon {
+    display: flex;
+    width: 16px;
+    height: 16px;
+  }
+}

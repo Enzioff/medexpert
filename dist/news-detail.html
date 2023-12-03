@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Новости деталка</title>
+<link href="./css/main.css" rel="stylesheet"></head>
+
+<body class="body">
+
+<section class="top-header">
+    <div class="container">
+        <div class="top-header__wrapper">
+            <a href="tel:+7 (4012) 519-000" class="phone">+7 (4012) 519-000</a>
+            <nav class="user-nav">
+                <a href="#" class="user-nav__link">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-eye"></use>
+                    </svg>
+                </a>
+                <a href="#" class="user-nav__link">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
+                    </svg>
+                </a>
+                <a href="#" class="user-nav__link">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-cart"></use>
+                    </svg>
+                    <span>Корзина</span>
+                </a>
+                <a href="#" class="user-nav__link">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-case"></use>
+                    </svg>
+                    <span>Расшифровка</span>
+                </a>
+                <a href="#" class="user-nav__link">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-person"></use>
+                    </svg>
+                    <span>Личный кабинет</span>
+                </a>
+            </nav>
+            <div class="burger" data-menu-open>
+                <span class="burger__item"></span>
+            </div>
+            <div class="menu-mobile" data-menu>
+                <a href="#" class="user">
+                    <picture class="user__picture">
+                        <img src="https://mykaleidoscope.ru/uploads/posts/2021-11/1636710348_1-mykaleidoscope-ru-p-devushka-v-solnechnikh-ochkakh-devushka-kr-1.jpg" alt="">
+                    </picture>
+                    <div class="user__info">
+                        <h3 class="user__name">Екатерина Птушкина</h3>
+                        <h3 class="user__mail">info@mail.ru</h3>
+                    </div>
+                </a>
+                <div class="search">
+                    <input type="text" class="input" placeholder="Поиск">
+                    <button class="button-arrow button-arrow--big">
+                        <svg class="button-arrow__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow"></use>
+                        </svg>
+                    </button>
+                </div>
+                <nav class="menu-mobile__nav">
+                    <a href="#" class="menu-mobile__link">Корзина</a>
+                    <a href="#" class="menu-mobile__link">Расшифровка</a>
+                    <a href="#" class="menu-mobile__link">Акции</a>
+                    <a href="#" class="menu-mobile__link">Анализы</a>
+                    <a href="#" class="menu-mobile__link">Выезд на дом</a>
+                    <a href="#" class="menu-mobile__link">Адреса</a>
+                    <a href="#" class="menu-mobile__link">Пациентам</a>
+                    <a href="#" class="menu-mobile__link">О компании</a>
+                </nav>
+                <div class="menu-mobile__exit">
+                    <svg class="menu-mobile__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-exit"></use>
+                    </svg>
+                    <span>Выйти</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <a href="#" class="logo">
+                <img src="./assets/images/icon-logo.svg" alt="">
+            </a>
+            <nav class="nav">
+                <a href="#" class="nav__link">Акции</a>
+                <a href="#" class="nav__link">Анализы</a>
+                <a href="#" class="nav__link">Выезд на дом</a>
+                <a href="#" class="nav__link">Адреса</a>
+                <a href="#" class="nav__link">Пациентам</a>
+                <a href="#" class="nav__link">О компании</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+    <section class="section mb-40">
+        <div class="container">
+            <div class="main-search main-search--dark">
+                <form action="#" class="main-search__form">
+                    <svg class="main-search__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
+                    </svg>
+                    <input type="text" class="input" placeholder="Поиск по сайту">
+                    <button class="main-search__button button button--search">Найти</button>
+                </form>
+            </div>
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <span class="breadcrumbs__link">Акции</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section pb-100">
+        <div class="container">
+            <div class="news-detail">
+                <div class="news-detail__top">
+                    <div class="news-detail__info">
+                        <h1 class="main-title">Название новости</h1>
+                        <p class="news-detail__date">03.03.2023</p>
+                        <div class="news-detail__stats">
+                            <p class="news-detail__article">Ведомственные новости</p>
+                            <p class="news-detail__article">Время чтения: 3 мин</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="editor editor--full">
+                    <p>
+                        Повседневная практика показывает, что реализация намеченных плановых заданий влечет за собой
+                        процесс внедрения и модернизации систем массового участия. Разнообразный и богатый опыт новая
+                        модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в
+                        формировании модели развития. Разнообразный и богатый опыт дальнейшее развитие различных форм
+                        деятельности позволяет оценить значение соответствующий условий активизации. С другой стороны
+                        укрепление и развитие структуры требуют определения и уточнения систем массового участия
+                    </p>
+                    <br>
+                    <p>
+                        Повседневная практика показывает, что реализация намеченных плановых заданий влечет за собой
+                        процесс внедрения и модернизации систем массового участия. Разнообразный и богатый опыт новая
+                        модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в
+                        формировании модели развития. Разнообразный и богатый опыт дальнейшее развитие различных форм
+                        деятельности позволяет оценить значение соответствующий условий активизации. С другой стороны
+                        укрепление и развитие структуры требуют определения и уточнения систем массового участия
+                    </p>
+                    <br>
+                    <p>
+                        Повседневная практика показывает, что реализация намеченных плановых заданий влечет за собой
+                        процесс внедрения и модернизации систем массового участия. Разнообразный и богатый опыт новая
+                        модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в
+                        формировании модели развития. Разнообразный и богатый опыт дальнейшее развитие различных форм
+                        деятельности позволяет оценить значение соответствующий условий активизации. С другой стороны
+                        укрепление и развитие структуры требуют определения и уточнения систем массового участия
+                    </p>
+                    <br>
+                    <img src="https://w.forfun.com/fetch/56/5656d35727009cabea6ce79973a9702c.jpeg" alt="">
+                    <br>
+                    <h5>Заголовок</h5>
+                    <br>
+                    <p>
+                        Повседневная практика показывает, что реализация намеченных плановых заданий влечет за собой
+                        процесс внедрения и модернизации систем массового участия. Разнообразный и богатый опыт новая
+                        модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в
+                        формировании модели развития. Разнообразный и богатый опыт дальнейшее развитие различных форм
+                        деятельности позволяет оценить значение соответствующий условий активизации. С другой стороны
+                        укрепление и развитие структуры требуют определения и уточнения систем массового участия
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section pb-100">
+        <div class="container">
+            <h3 class="title mb-30">Другие новости</h3>
+            <div class="slider mb-40">
+                <div class="slider__wrapper" data-slider="default">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <article class="article-stock" style="background-image: url('./assets/images/article-photo.png')">
+                                <div class="article-stock__info">
+                                    <h3 class="article-stock__title">Экономим по выходным!</h3>
+                                    <p class="article-stock__text">Комплексные лабораторные<br>исследования</p>
+                                    <p class="article-stock__text">со скидкой до 50%</p>
+                                    <a href="#" class="article-stock__show-more show-more">
+                                        <span>Читать</span>
+                                        <button class="button-arrow">
+                                            <svg class="button-arrow__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow"></use>
+                                            </svg>
+                                        </button>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="article-stock" style="background-image: url('./assets/images/article-photo.png')">
+                                <div class="article-stock__info">
+                                    <h3 class="article-stock__title">Выгодная и удобная<br> диагностика за 1 день!</h3>
+                                    <p class="article-stock__text">диагностические пакеты</p>
+                                    <a href="#" class="article-stock__show-more show-more">
+                                        <span>Читать</span>
+                                        <button class="button-arrow">
+                                            <svg class="button-arrow__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow"></use>
+                                            </svg>
+                                        </button>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="article-stock" style="background-image: url('./assets/images/article-photo.png')">
+                                <div class="article-stock__info">
+                                    <h3 class="article-stock__title">Выгодная и удобная<br> диагностика за 1 день!</h3>
+                                    <p class="article-stock__text">диагностические пакеты</p>
+                                    <a href="#" class="article-stock__show-more show-more">
+                                        <span>Читать</span>
+                                        <button class="button-arrow">
+                                            <svg class="button-arrow__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow"></use>
+                                            </svg>
+                                        </button>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="article-stock" style="background-image: url('./assets/images/article-photo.png')">
+                                <div class="article-stock__info">
+                                    <h3 class="article-stock__title">Выгодная и удобная<br> диагностика за 1 день!</h3>
+                                    <p class="article-stock__text">диагностические пакеты</p>
+                                    <a href="#" class="article-stock__show-more show-more">
+                                        <span>Читать</span>
+                                        <button class="button-arrow">
+                                            <svg class="button-arrow__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow"></use>
+                                            </svg>
+                                        </button>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="slider__button slider__button--prev">
+                        <svg>
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-pointer"></use>
+                        </svg>
+                    </div>
+                    <div class="slider__button slider__button--next">
+                        <svg>
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-pointer"></use>
+                        </svg>
+                    </div>
+                    <div class="slider__pagination"></div>
+                </div>
+            </div>
+            <button class="button centered button--auto">
+                <svg class="button__icon">
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-book-stars"></use>
+                </svg>
+                Все акции
+            </button>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <a href="#" class="footer__logo logo desktop-hidden order-m-n1">
+                <img src="./assets/images/icon-logo.svg" alt="">
+            </a>
+            <div class="footer__detail order-m-1">
+                <a href="#" class="footer__logo logo mob-hidden">
+                    <img src="./assets/images/icon-logo.svg" alt="">
+                </a>
+                <a href="tel:+74012519000" class="footer__phone phone order-m-1">+7 (4012) 519-000</a>
+                <div class="footer__social social order-m-0">
+                    <button class="button desktop-hidden">Выезд на дом</button>
+                    <a href="#" class="social__link">
+                        <svg class="social__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-vk"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="social__link">
+                        <svg class="social__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-yt"></use>
+                        </svg>
+                    </a>
+                </div>
+                <p class="footer__text order-m-n1">Контакты</p>
+                <a href="#" class="footer__link footer__link--underline order-m-2">Политика конфидециальности</a>
+                <p class="footer__copyright copyright order-m-3">
+                    © ООО “Медэксперт”<br>
+                    Все права защищены 2023
+                </p>
+            </div>
+            <div class="footer__nav order-m-0">
+                <div class="footer__item">
+                    <h4 class="footer__title">Анализы</h4>
+                    <nav class="footer__list">
+                        <a href="#" class="footer__link">Каталог анализов</a>
+                        <a href="#" class="footer__link">Срочные анализы</a>
+                        <a href="#" class="footer__link">Щитовидная железа</a>
+                        <a href="#" class="footer__link">Репродуктивная функция</a>
+                        <a href="#" class="footer__link">Витамины</a>
+                        <a href="#" class="footer__link">Клещи и клещевые инфекции</a>
+                        <a href="#" class="footer__link">Прочие анализы</a>
+                        <a href="#" class="footer__link">Прочие анализы</a>
+                        <a href="#" class="footer__link">Прочие анализы</a>
+                        <a href="#" class="footer__link">Прочие анализы</a>
+                        <a href="#" class="footer__link">Прочие анализы</a>
+                    </nav>
+                </div>
+                <div class="footer__item">
+                    <h4 class="footer__title">О компании</h4>
+                    <nav class="footer__list">
+                        <a href="#" class="footer__link">Контакты</a>
+                        <a href="#" class="footer__link">Нормативные документы</a>
+                        <a href="#" class="footer__link">Контроль качества</a>
+                        <a href="#" class="footer__link">СМИ о нас</a>
+                        <a href="#" class="footer__link">Видео о КДЛ</a>
+                        <a href="#" class="footer__link">Вакансии</a>
+                        <a href="#" class="footer__link">Наши партнеры</a>
+                        <a href="#" class="footer__link">Технологии</a>
+                        <a href="#" class="footer__link">Оборудование</a>
+                        <a href="#" class="footer__link">Политика конфиденциальности</a>
+                    </nav>
+                </div>
+                <div class="footer__item">
+                    <h4 class="footer__title">Пациентам</h4>
+                    <nav class="footer__list">
+                        <a href="#" class="footer__link">Как узнать результат</a>
+                        <a href="#" class="footer__link">Правила подготовки</a>
+                        <a href="#" class="footer__link">Результат на ГосУслугах</a>
+                        <a href="#" class="footer__link">Сроки выполнения</a>
+                        <a href="#" class="footer__link">Вопросы и ответы</a>
+                        <a href="#" class="footer__link">Задать вопрос</a>
+                        <a href="#" class="footer__link">Справка для ФНС</a>
+                        <a href="#" class="footer__link">Страховые компании</a>
+                        <a href="#" class="footer__link">ДМС</a>
+                    </nav>
+                </div>
+                <div class="footer__item">
+                    <h4 class="footer__title">Информация</h4>
+                    <nav class="footer__list">
+                        <a href="#" class="footer__link">Акции</a>
+                        <a href="#" class="footer__link">Новости</a>
+                        <a href="#" class="footer__link">Статьи</a>
+                        <a href="#" class="footer__link">Оплата</a>
+                        <a href="#" class="footer__link">Оставить отзыв</a>
+                        <a href="#" class="footer__link">Скидки и дисконтные программы</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__down order-m-2">
+                <a href="#" class="develop">
+                    <span>Разработано</span>
+                    <svg>
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-diez"></use>
+                    </svg>
+                </a>
+                <button class="button mob-hidden">Выезд на дом</button>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Это временная секция, здесь ссылки на все страницы. На продакшене ее не будет -->
+<section class="section">
+    <div class="container">
+        <style>
+            .temp {
+                gap: 15px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .temp__link {
+                color: inherit;
+                font-family: 'Manrope', sans-serif;
+                font-size: 16px;
+                text-decoration: underline;
+            }
+
+            .temp__link:hover {
+                text-decoration: none;
+            }
+        </style>
+        <div class="temp">
+            <a href="./index.html" class="temp__link">Главная</a>
+            <a href="./stock.html" class="temp__link">Акции</a>
+            <a href="./stock-detail.html" class="temp__link">Акции деталка</a>
+            <a href="./analyses.html" class="temp__link">Анализы</a>
+            <a href="./analyses-detail.html" class="temp__link">Анализы деталка</a>
+            <a href="./departure.html" class="temp__link">Выезд на дом</a>
+            <a href="./patient.html" class="temp__link">Пациентам</a>
+            <a href="./rules.html" class="temp__link">Правила подготовки к анализам</a>
+            <a href="./gosuslugi.html" class="temp__link">Результаты на госуслугах</a>
+            <a href="./terms.html" class="temp__link">Сроки выполнения анализов</a>
+            <a href="./fns.html" class="temp__link">Справка для ФНС</a>
+            <a href="./payment.html" class="temp__link">Оплата</a>
+            <a href="./news.html" class="temp__link">Новости</a>
+            <a href="./news-detail.html" class="temp__link">Новости деталка</a>
+            <a href="./articles.html" class="temp__link">Статьи</a>
+            <a href="./dms.html" class="temp__link">ДМС</a>
+            <a href="./about.html" class="temp__link">О компании</a>
+            <a href="./clinics.html" class="temp__link">Клиники</a>
+            <a href="./docs.html" class="temp__link">Нормативные документы</a>
+            <a href="./quality-control.html" class="temp__link">Контроль качества</a>
+            <a href="./smi.html" class="temp__link">СМИ о Нас</a>
+            <a href="./vacancy.html" class="temp__link">Вакансии</a>
+            <a href="./technologies.html" class="temp__link">Технологии</a>
+            <a href="./equipment.html" class="temp__link">Оборудование</a>
+            <a href="./policy.html" class="temp__link">Политика конфиденциальности</a>
+            <a href="./clinics-detail.html" class="temp__link">Карточка центра</a>
+            <a href="./addresses.html" class="temp__link">Адреса</a>
+        </div>
+    </div>
+</section>
+
+<script defer src="js/bundle.js"></script></body>
+
+</html>

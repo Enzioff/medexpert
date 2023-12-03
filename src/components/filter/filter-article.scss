@@ -1,0 +1,34 @@
+.filter-article {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+
+  &__select {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__text {
+    color: $gray-dark;
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: flex;
+    width: 14px;
+    height: 14px;
+    pointer-events: none;
+    transform: translateY(-50%);
+  }
+}

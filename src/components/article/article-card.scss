@@ -1,0 +1,72 @@
+.article-card {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+  height: 100%;
+  gap: 20px;
+  background-color: $gray-light;
+
+  &--row {
+    flex-direction: row;
+    padding: 14px 30px;
+  }
+
+  &--faq {
+    gap: 20px;
+  }
+
+  &--faq &__icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0;
+  }
+
+  &__picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: $blue;
+  }
+
+  &__icon {
+    display: flex;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__title {
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  &__text {
+    font-weight: 300;
+    line-height: 110%;
+    &:not(:last-of-type) {
+      margin-bottom: 20px;
+    }
+
+    a {
+      font-weight: 500;
+      color: $primary-light;
+      text-decoration: underline;
+    }
+  }
+
+  &--dark {
+    background-color: $blue;
+  }
+  &--big {
+    grid-column: span 3;
+  }
+
+  &--auto-size {
+    height: auto;
+  }
+}

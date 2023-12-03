@@ -1,0 +1,39 @@
+.tooltip {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  min-width: 230px;
+  gap: 20px;
+  padding: 40px;
+  border-radius: 0 20px 20px 20px;
+  background-color: $light;
+  filter: drop-shadow(10px 10px 30px rgba(55, 63, 63, 0.25));
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__element {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 110%;
+  }
+
+  &__text {
+    font-size: 14px;
+    font-weight: 300;
+  }
+}

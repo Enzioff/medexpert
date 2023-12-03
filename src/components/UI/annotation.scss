@@ -1,0 +1,24 @@
+.annotation {
+  display: flex;
+  padding: 37px 40px;
+  &--red {
+    background-color: $red;
+  }
+  &--green {
+    background-color: $green-transparent;
+  }
+  &--picture {
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+
+    @include r(1200) {
+      gap: 20px;
+      flex-direction: column;
+    }
+
+    .text {
+      max-width: 600px;
+    }
+  }
+}

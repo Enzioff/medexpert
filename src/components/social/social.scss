@@ -1,0 +1,18 @@
+.social {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  &__link {
+    display: flex;
+    width: 26px;
+    height: 26px;
+    padding: 6px;
+    border-radius: 50px;
+    background-color: $primary-light;
+  }
+
+  &__icon {
+    display: flex;
+  }
+}

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body">
+
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+    <section class="section section--top">
+        <div class="container">
+            <div class="main-search">
+                <form action="#" class="main-search__form">
+                    <svg class="main-search__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
+                    </svg>
+                    <input type="text" class="input" placeholder="Поиск по сайту">
+                    <button class="main-search__button button button--search">Найти</button>
+                </form>
+            </div>
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <span class="breadcrumbs__link">Акции</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section section--gray">
+        <div class="container">
+            <div class="intro">
+                <div class="intro__info">
+                    <h1 class="main-title">Адреса</h1>
+                    <p class="intro__text">
+                        ООО "МЦ "Медэксперт-5"<br>
+                        Учредители: Колобухов П.В., Колобухов Д.В., Колобухова Т.П.
+                    </p>
+                    <p class="text">
+                        <a href="#">ОГРН/ИНН</a>
+                    </p>
+                    <div class="details details--default">
+                        <a href="tel:74012567766" class="phone phone--big">+7 (4012) 56-77-66</a>
+                        <a href="mailto:office@mdx39.ru" class="details__item">office@mdx39.ru</a>
+                        <p class="details__item">
+                            <svg class="details__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-pointer"></use>
+                            </svg>
+                            Калининград, ул Интернациональная, 64
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section pt-60 pb-30">
+        <div class="container">
+            <div class="head mb-25">
+                <h2 class="title">Адреса наших клиник</h2>
+            </div>
+            <form class="search-addresses mb-20" action="#">
+                <input type="text" placeholder="Введите адрес">
+                <button type="submit">
+                    <svg class="search-addresses__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
+                    </svg>
+                </button>
+            </form>
+            <div class="filter-tab mb-30">
+                <button class="button">На карте</button>
+                <button class="button button--inactive">Списком</button>
+            </div>
+            <!-- addresses--list - для показа списком -->
+            <div class="addresses">
+                <div class="addresses__detail">
+                    <div class="addresses__list">
+                        <article class="address">
+                            <div class="address__top">
+                                <h3 class="address__title">Диагностическая лаборатория</h3>
+                                <div class="address__info">
+                                    <svg class="address__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-info"></use>
+                                    </svg>
+                                    <div class="tooltip">
+                                        <div class="tooltip__element">
+                                            <h3 class="tooltip__title">Режим работы</h3>
+                                            <p class="tooltip__text">
+                                                пн - пт: с 8:00 до 22:00<br>
+                                                сб - вс: с 9:00 до 20:00
+                                            </p>
+                                        </div>
+                                        <div class="tooltip__element">
+                                            <h3 class="tooltip__title">Режим работы</h3>
+                                            <p class="tooltip__text">
+                                                пн - пт: с 8:00 до 22:00<br>
+                                                сб - вс: с 9:00 до 20:00
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="tel:84012519000" class="address__link link link--dot">8 (4012) 51-90-00</a>
+                            <p class="text">
+                                Калининград, улица<br> Интернациональная, 64
+                            </p>
+                        </article>
+                        <article class="address">
+                            <div class="address__top">
+                                <h3 class="address__title">Диагностическая лаборатория</h3>
+                                <div class="address__info">
+                                    <svg class="address__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-info"></use>
+                                    </svg>
+                                    <div class="tooltip">
+                                        <div class="tooltip__element">
+                                            <h3 class="tooltip__title">Режим работы</h3>
+                                            <p class="tooltip__text">
+                                                пн - пт: с 8:00 до 22:00<br>
+                                                сб - вс: с 9:00 до 20:00
+                                            </p>
+                                        </div>
+                                        <div class="tooltip__element">
+                                            <h3 class="tooltip__title">Режим работы</h3>
+                                            <p class="tooltip__text">
+                                                пн - пт: с 8:00 до 22:00<br>
+                                                сб - вс: с 9:00 до 20:00
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="tel:84012519000" class="address__link link link--dot">8 (4012) 51-90-00</a>
+                            <p class="text">
+                                Калининград, улица<br> Интернациональная, 64
+                            </p>
+                        </article>
+                        <article class="address">
+                            <div class="address__top">
+                                <h3 class="address__title">Диагностическая лаборатория</h3>
+                                <div class="address__info">
+                                    <svg class="address__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-info"></use>
+                                    </svg>
+                                    <div class="tooltip">
+                                        <div class="tooltip__element">
+                                            <h3 class="tooltip__title">Режим работы</h3>
+                                            <p class="tooltip__text">
+                                                пн - пт: с 8:00 до 22:00<br>
+                                                сб - вс: с 9:00 до 20:00
+                                            </p>
+                                        </div>
+                                        <div class="tooltip__element">
+                                            <h3 class="tooltip__title">Режим работы</h3>
+                                            <p class="tooltip__text">
+                                                пн - пт: с 8:00 до 22:00<br>
+                                                сб - вс: с 9:00 до 20:00
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="tel:84012519000" class="address__link link link--dot">8 (4012) 51-90-00</a>
+                            <p class="text">
+                                Калининград, улица<br> Интернациональная, 64
+                            </p>
+                        </article>
+                        <article class="address">
+                            <div class="address__top">
+                                <h3 class="address__title">Диагностическая лаборатория</h3>
+                                <div class="address__info">
+                                    <svg class="address__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-info"></use>
+                                    </svg>
+                                    <div class="tooltip">
+                                        <div class="tooltip__element">
+                                            <h3 class="tooltip__title">Режим работы</h3>
+                                            <p class="tooltip__text">
+                                                пн - пт: с 8:00 до 22:00<br>
+                                                сб - вс: с 9:00 до 20:00
+                                            </p>
+                                        </div>
+                                        <div class="tooltip__element">
+                                            <h3 class="tooltip__title">Режим работы</h3>
+                                            <p class="tooltip__text">
+                                                пн - пт: с 8:00 до 22:00<br>
+                                                сб - вс: с 9:00 до 20:00
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="tel:84012519000" class="address__link link link--dot">8 (4012) 51-90-00</a>
+                            <p class="text">
+                                Калининград, улица<br> Интернациональная, 64
+                            </p>
+                        </article>
+                        <article class="address">
+                            <div class="address__top">
+                                <h3 class="address__title">Диагностическая лаборатория</h3>
+                                <div class="address__info">
+                                    <svg class="address__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-info"></use>
+                                    </svg>
+                                    <div class="tooltip">
+                                        <div class="tooltip__element">
+                                            <h3 class="tooltip__title">Режим работы</h3>
+                                            <p class="tooltip__text">
+                                                пн - пт: с 8:00 до 22:00<br>
+                                                сб - вс: с 9:00 до 20:00
+                                            </p>
+                                        </div>
+                                        <div class="tooltip__element">
+                                            <h3 class="tooltip__title">Режим работы</h3>
+                                            <p class="tooltip__text">
+                                                пн - пт: с 8:00 до 22:00<br>
+                                                сб - вс: с 9:00 до 20:00
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="tel:84012519000" class="address__link link link--dot">8 (4012) 51-90-00</a>
+                            <p class="text">
+                                Калининград, улица<br> Интернациональная, 64
+                            </p>
+                        </article>
+                        <article class="address">
+                            <div class="address__top">
+                                <h3 class="address__title">Диагностическая лаборатория</h3>
+                                <div class="address__info">
+                                    <svg class="address__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-info"></use>
+                                    </svg>
+                                    <div class="tooltip">
+                                        <div class="tooltip__element">
+                                            <h3 class="tooltip__title">Режим работы</h3>
+                                            <p class="tooltip__text">
+                                                пн - пт: с 8:00 до 22:00<br>
+                                                сб - вс: с 9:00 до 20:00
+                                            </p>
+                                        </div>
+                                        <div class="tooltip__element">
+                                            <h3 class="tooltip__title">Режим работы</h3>
+                                            <p class="tooltip__text">
+                                                пн - пт: с 8:00 до 22:00<br>
+                                                сб - вс: с 9:00 до 20:00
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="tel:84012519000" class="address__link link link--dot">8 (4012) 51-90-00</a>
+                            <p class="text">
+                                Калининград, улица<br> Интернациональная, 64
+                            </p>
+                        </article>
+                    </div>
+                    <div class="emergency">
+                        <div class="emergency__info">
+                            <h2 class="emergency__title">Скорая помощь</h2>
+                            <p class="text">
+                                Выезд бригад скорой помощи осуществляется по любому направлению
+                            </p>
+                        </div>
+                        <a href="tel:+74012519000" class="emergency__phone">
+                            +7 (4012) 51-90-00
+                        </a>
+                    </div>
+                </div>
+                <div class="addresses__map">
+                    <img src="./assets/images/map.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section pt-30 pb-100">
+        <div class="container">
+            <div class="head mb-40">
+                <h2 class="title">Диагностическая лаборатория</h2>
+                <div class="text text--column">
+                    <p>ООО "МЦ "Медэксперт-5"</p>
+                    <p>Учредители: Колобухов П.В., Колобухов Д.В., Колобухова Т.П.</p>
+                    <a href="#">ОГРН/ИНН</a>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="columns__col--4 columns__col-mob--4">
+                    <div class="article-lab">
+                        <div class="article-lab__header">Адрес</div>
+                        <address class="article-lab__address">
+                            <a href="#">ул. Космическая, 29</a>
+                            <a href="#">ул. Косм. Леонова, 8 - Клинико-диагностическая лаборатория</a>
+                        </address>
+                    </div>
+                </div>
+                <div class="columns__col--3 columns__col-mob--4">
+                    <div class="article-lab">
+                        <div class="article-lab__header">Режим работы</div>
+                        <div class="article-lab__time">
+                            <p>пн - сб: с 09:00 до 21:00</p>
+                            <p>вс: с 10:00 до 18:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns__col--5 columns__col-mob--4">
+                    <div class="article-lab">
+                        <div class="article-lab__header">Главный врач</div>
+                        <a class="article-lab__link" href="mailto:">
+                            <span>Колобухов Павел Владимирович</span>
+                            <svg class="article-lab__icon">
+                                <use xlink:href="assets/sprite/sprite.svg#icon-mail"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="columns__col--4 columns__col-mob--4">
+                    <div class="article-lab">
+                        <div class="article-lab__header">Контакты</div>
+                        <a class="link link--dot link--big" href="tel:+74012519000">8 (4012) 51-90-00</a>
+                        <a href="mailto:office@mdx39.ru">mailto:office@mdx39.ru</a>
+                    </div>
+                </div>
+                <div class="columns__col--3 columns__col-mob--4">
+                    <div class="article-lab">
+                        <div class="article-lab__header">Приём анализов</div>
+                        <div class="article-lab__time">
+                            <p>пн - сб: с 09:00 до 21:00</p>
+                            <p>вс: с 10:00 до 18:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns__col--5 columns__col-mob--4">
+                    <div class="article-lab">
+                        <div class="article-lab__header">Дополнительная информация</div>
+                        <p>Патоморфологическая лаборатория (цитология и гистология, анализ спермы) -
+                            <strong>8 (4012) 51-90-00</strong>
+                        </p>
+                        <p>ПЦР-лаборатория -
+                            <strong>8 (4012) 51-90-00, доб 2203</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="columns__col--3 columns__col-mob--2">
+                    <button class="button button--full" type="button">Записаться</button>
+                </div>
+                <div class="columns__col--2 columns__col-mob--2">
+                    <button class="button button--full button--dark" type="button">Подробнее</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<%= htmlWebpackPlugin.options.sectionFooter %>
+
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+
+</html>

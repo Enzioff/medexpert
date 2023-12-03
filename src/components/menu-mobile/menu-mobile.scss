@@ -1,0 +1,59 @@
+.menu-mobile {
+  position: absolute;
+  top: 47px;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  padding: 35px 20px;
+  width: 330px;
+  background-color: $light;
+  border-radius: 10px;
+  z-index: 4;
+  transform: translate(100%, 0);
+  transition: transform .2s linear;
+  will-change: transform;
+
+  @include r(1200) {
+    display: flex;
+  }
+
+  &.active {
+    transform: translate(0, 0);
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    display: flex;
+    padding: 11px;
+    border-radius: 10px;
+    &:hover {
+      background-color: $primary-light;
+      color: $light;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    width: 16px;
+    height: 16px;
+  }
+
+  &__exit {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    cursor: pointer;
+
+    span {
+      font-size: 16px;
+      font-weight: 400;
+      color: $transparent;
+    }
+  }
+}

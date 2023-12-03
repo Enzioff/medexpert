@@ -1,0 +1,31 @@
+.text {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 300;
+
+  &--medium {
+    font-size: 18px;
+  }
+
+  &--big {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  &--column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  a {
+    color: $primary-light;
+  }
+
+  strong {
+    font-weight: 500;
+  }
+}
+
+strong.text {
+  font-weight: 500;
+}

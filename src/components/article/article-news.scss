@@ -1,0 +1,38 @@
+.article-news {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  padding: 30px 40px;
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 50% 100%;
+  border-radius: 10px;
+  background-color: $gray;
+  overflow: hidden;
+
+  &__title {
+    max-width: 330px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 129%;
+  }
+
+  &__time {
+    max-width: 330px;
+    font-size: 14px;
+    font-weight: 500;
+    color: $primary-light;
+  }
+
+  &__text {
+    max-width: 330px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &--full {
+    grid-column: span 2;
+  }
+}

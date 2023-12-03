@@ -1,0 +1,32 @@
+.button-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+  border-radius: 50px;
+  background-color: $primary-light;
+  cursor: pointer;
+
+  &--big {
+    width: 24px;
+    height: 24px;
+  }
+
+  &--big &__icon {
+    width: 10px;
+    height: 10px;
+  }
+
+  &--dark {
+    background-color: $primary;
+  }
+
+  &__icon {
+    display: flex;
+    width: 7px;
+    height: 7px;
+    fill: $light;
+  }
+}

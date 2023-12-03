@@ -1,0 +1,11 @@
+.price {
+  &__current {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+
+    @include r(1200) {
+      font-size: 20px;
+    }
+  }
+}

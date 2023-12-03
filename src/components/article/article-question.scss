@@ -1,0 +1,129 @@
+.article-question {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: $blue-light;
+  border-radius: 10px;
+  overflow: hidden;
+
+  @include r(1200) {
+    min-height: 520px;
+  }
+
+  &::before {
+    position: absolute;
+    top: -10%;
+    left: 56%;
+    content: '';
+    display: flex;
+    width: 570px;
+    height: 570px;
+    flex-shrink: 0;
+    background-color: $blue-black;
+    border-radius: 50%;
+
+    @include r(1200) {
+      top: 38%;
+      left: -6%;
+    }
+  }
+
+  &__picture {
+    position: absolute;
+    right: 0;
+    display: flex;
+    z-index: 0;
+    height: 100%;
+
+    @include r(1200) {
+      top: initial;
+      bottom: 0;
+      right: -22%;
+      height: auto;
+    }
+
+    img {
+      @include r(1200) {
+        display: flex;
+        height: 300px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 14px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  &__text {
+    margin-bottom: 33px;
+    max-width: 475px;
+    font-size: 18px;
+    font-weight: 400;
+
+    @include r(1200) {
+      font-size: 16px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0 30px 30px;
+    z-index: 1;
+
+    @include r(1200) {
+      padding: 30px;
+    }
+  }
+
+  &--catalog &__info {
+    padding: 77px 0 77px 70px;
+
+    @include r(1200) {
+      padding: 30px;
+    }
+  }
+
+  &--catalog &__title {
+    @include r(1200) {
+      font-size: 18px;
+    }
+  }
+
+  &--catalog {
+    &::before {
+      display: none;
+    }
+  }
+
+  &--catalog &__picture {
+
+    @include r(1200) {
+      right: 0;
+    }
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      content: '';
+      display: flex;
+      width: 650px;
+      height: 100%;
+      background: linear-gradient(90deg, #E0ECF9 4.5%, rgba(224, 236, 249, 0.00) 38.46%);
+      z-index: 1;
+
+      @include r(1200) {
+        width: 100%;
+        background: linear-gradient(180deg, #E0ECF9 8.5%, rgba(224, 236, 249, 0) 38.46%);
+      }
+    }
+  }
+
+  &--catalog &__title {
+    margin-bottom: 30px;
+  }
+}

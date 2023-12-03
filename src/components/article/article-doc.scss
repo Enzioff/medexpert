@@ -1,0 +1,16 @@
+.article-doc {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  height: 100%;
+  padding: 26px 40px;
+  border-radius: 5px;
+  background-color: $gray;
+
+  &__icon {
+    display: flex;
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+  }
+}

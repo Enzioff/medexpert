@@ -1,0 +1,39 @@
+.article-relevant {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: $primary-light;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__picture {
+    display: flex;
+    width: 148px;
+    height: 81px;
+    border-radius: 60px;
+    overflow: hidden;
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  &__date {
+    font-weight: 500;
+    color: $primary-light;
+  }
+}

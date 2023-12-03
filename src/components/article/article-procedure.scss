@@ -1,0 +1,41 @@
+.article-procedure {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 25px;
+
+  @include r(1200) {
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 500;
+    transition: .2s linear;
+
+    @include r(1200) {
+      font-size: 16px;
+    }
+
+    &:hover {
+      color: $primary-light;
+    }
+  }
+
+  &__code {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba($primary, 0.40);
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    @include r(1200) {
+      grid-column: span 2;
+    }
+  }
+}

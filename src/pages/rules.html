@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body">
+
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+    <section class="section section--top">
+        <div class="container">
+            <div class="main-search">
+                <form action="#" class="main-search__form">
+                    <svg class="main-search__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
+                    </svg>
+                    <input type="text" class="input" placeholder="Поиск по сайту">
+                    <button class="main-search__button button button--search">Найти</button>
+                </form>
+            </div>
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <span class="breadcrumbs__link">Акции</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section section--gray">
+        <div class="container">
+            <div class="intro">
+                <div class="intro__info intro__info--bottom">
+                    <h1 class="main-title">Правила подготовки пациента<br>
+                        к лабораторным и УЗ - исследованиям</h1>
+                    <p class="intro__text">На результат исследования влияет множество факторов, не<br> связанных с
+                        качеством
+                        реагентов и работой лаборатории. Уровень<br> любого параметра зависит от вашего состояния на
+                        момент
+                        взятия<br> биоматериала, времени суток, сна, приема пищи. Именно поэтому<br> особенно важно
+                        соблюдать
+                        правила подготовки к анализам.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section pt-60 pb-100">
+        <div class="container">
+            <div class="head head--control mb-30">
+                <h2 class="title">Общие требования подготовки<br> к лабораторным анализам</h2>
+                <button class="button button--more">
+                    <svg class="button__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-spreadsheets"></use>
+                    </svg>
+                    <span>Читать подробную инструкцию</span>
+                    <span class="button-arrow">
+                        <svg class="button-arrow__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow"></use>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <div class="grid-cards">
+                <article class="grid-cards__item article-card">
+                    <div class="article-card__picture">
+                        <svg class="article-card__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-mail"></use>
+                        </svg>
+                    </div>
+                    <div class="article-card__info">
+                        <h3 class="article-card__title">Воздержитесь от лекарств</h3>
+                        <p class="article-card__text">
+                            По возможности воздержитесь от приема лекарств или перенесите прием лекарств на время после
+                            сдачи биологического материала для исследования. Некоторые виды исследований (например,
+                            дисбактериоз) делают строго до начала приема антибиотиков и химиотерапевтических лекарств.
+                            Исключение составляют специальные исследования концентрации лекарства в крови.
+                        </p>
+                    </div>
+                </article>
+                <article class="grid-cards__item grid-cards__item--full article-card">
+                    <div class="article-card__picture">
+                        <svg class="article-card__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-mail"></use>
+                        </svg>
+                    </div>
+                    <div class="article-card__info">
+                        <h3 class="article-card__title">Составьте список всех лекарств и БАД</h3>
+                        <p class="article-card__text">
+                            Прием лекарственных препаратов и биологически активных биодобавок (БАД) может оказать
+                            существенное влияние на результаты исследований, поэтому их приём должен учитываться при
+                            интерпретации результатов исследований. Если вы испытываете трудности с отменой лекарств, то
+                            обязательно сообщите об этом при оформлении направления на исследование или при взятии
+                            биологического материала. Накануне сдачи анализа, необходимо составить список всех
+                            принимаемых рецептурных, безрецептурных лекарств и БАД. Перед сдачей биологического
+                            материала следует указать время последнего приёма и передать эту информацию при регистрации
+                            направления. Отсутствие этих сведений может быть причиной диагностических ошибок и
+                            неправильного лечения.
+                        </p>
+                    </div>
+                </article>
+                <article class="grid-cards__item article-card article-card--row">
+                    <div class="article-card__picture">
+                        <svg class="article-card__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-mail"></use>
+                        </svg>
+                    </div>
+                    <div class="article-card__info">
+                        <h3 class="article-card__title">Кровь</h3>
+                        <p class="article-card__text">
+                            Обратите внимание, что для исследований крови используется кровь из вены, а не кровь из
+                            пальца.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="section pb-100">
+        <div class="container">
+            <div class="grid-cards grid-cards--more">
+                <article class="article-department" data-accordion>
+                    <div class="article-department__top">
+                        <div class="article-department__picture">
+                            <svg class="article-department__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-mail"></use>
+                            </svg>
+                        </div>
+                        <h3 class="article-department__title">Кровь</h3>
+                        <span class="article-department__button-arrow button-arrow">
+                            <svg class="button-arrow__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="article-department__body">
+                        <ul class="article-department__list">
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">Общий
+                                    анализ (копрограмма)</a>
+                            </li>
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">Дисбактериоз,
+                                    кишечная группа</a>
+                            </li>
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">Простейшие
+                                    и яйца гельминтов</a>
+                            </li>
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">Бактериология</a>
+                            </li>
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">ПЦР-исследования</a>
+                            </li>
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">Посев на
+                                    микрофлору и чувствительность к антибиотикам</a>
+                            </li>
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">На
+                                    углеводы</a>
+                            </li>
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">На скрытую
+                                    кровь</a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="article-department" data-accordion>
+                    <div class="article-department__top">
+                        <div class="article-department__picture">
+                            <svg class="article-department__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-mail"></use>
+                            </svg>
+                        </div>
+                        <h3 class="article-department__title">Кровь</h3>
+                        <span class="article-department__button-arrow button-arrow">
+                            <svg class="button-arrow__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="article-department__body">
+                        <ul class="article-department__list">
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">Общий
+                                    анализ (копрограмма)</a>
+                            </li>
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">Дисбактериоз,
+                                    кишечная группа</a>
+                            </li>
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">Простейшие
+                                    и яйца гельминтов</a>
+                            </li>
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">Бактериология</a>
+                            </li>
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">ПЦР-исследования</a>
+                            </li>
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">Посев на
+                                    микрофлору и чувствительность к антибиотикам</a>
+                            </li>
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">На
+                                    углеводы</a>
+                            </li>
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">На скрытую
+                                    кровь</a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="article-department" data-accordion>
+                    <div class="article-department__top">
+                        <div class="article-department__picture">
+                            <svg class="article-department__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-mail"></use>
+                            </svg>
+                        </div>
+                        <h3 class="article-department__title">Кровь</h3>
+                        <span class="article-department__button-arrow button-arrow">
+                            <svg class="button-arrow__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="article-department__body">
+                        <ul class="article-department__list">
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">Общий
+                                    анализ (копрограмма)</a>
+                            </li>
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">Посев на
+                                    микрофлору и чувствительность к антибиотикам</a>
+                            </li>
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">На
+                                    углеводы</a>
+                            </li>
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">На скрытую
+                                    кровь</a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="article-department" data-accordion>
+                    <div class="article-department__top">
+                        <div class="article-department__picture">
+                            <svg class="article-department__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-mail"></use>
+                            </svg>
+                        </div>
+                        <h3 class="article-department__title">Кровь</h3>
+                        <span class="article-department__button-arrow button-arrow">
+                            <svg class="button-arrow__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="article-department__body">
+                        <ul class="article-department__list">
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">Общий
+                                    анализ (копрограмма)</a>
+                            </li>
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">Дисбактериоз,
+                                    кишечная группа</a>
+                            </li>
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">Простейшие
+                                    и яйца гельминтов</a>
+                            </li>
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">Бактериология</a>
+                            </li>
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">ПЦР-исследования</a>
+                            </li>
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">Посев на
+                                    микрофлору и чувствительность к антибиотикам</a>
+                            </li>
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">На
+                                    углеводы</a>
+                            </li>
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">На скрытую
+                                    кровь</a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="article-department" data-accordion>
+                    <div class="article-department__top">
+                        <div class="article-department__picture">
+                            <svg class="article-department__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-mail"></use>
+                            </svg>
+                        </div>
+                        <h3 class="article-department__title">Кровь</h3>
+                        <span class="article-department__button-arrow button-arrow">
+                            <svg class="button-arrow__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="article-department__body">
+                        <ul class="article-department__list">
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">Общий
+                                    анализ (копрограмма)</a>
+                            </li>
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">Дисбактериоз,
+                                    кишечная группа</a>
+                            </li>
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">Простейшие
+                                    и яйца гельминтов</a>
+                            </li>
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">Бактериология</a>
+                            </li>
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">ПЦР-исследования</a>
+                            </li>
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">Посев на
+                                    микрофлору и чувствительность к антибиотикам</a>
+                            </li>
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">На
+                                    углеводы</a>
+                            </li>
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">На скрытую
+                                    кровь</a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="article-department" data-accordion>
+                    <div class="article-department__top">
+                        <div class="article-department__picture">
+                            <svg class="article-department__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-mail"></use>
+                            </svg>
+                        </div>
+                        <h3 class="article-department__title">Кровь</h3>
+                        <span class="article-department__button-arrow button-arrow">
+                            <svg class="button-arrow__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="article-department__body">
+                        <ul class="article-department__list">
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">Общий
+                                    анализ (копрограмма)</a>
+                            </li>
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">Посев на
+                                    микрофлору и чувствительность к антибиотикам</a>
+                            </li>
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">На
+                                    углеводы</a>
+                            </li>
+                            <li class="article-department__item">
+                                <a href="#" class="article-department__link">На скрытую
+                                    кровь</a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
+
+<%= htmlWebpackPlugin.options.sectionFooter %>
+
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+
+</html>

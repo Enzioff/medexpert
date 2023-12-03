@@ -1,0 +1,16 @@
+.search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 21px;
+  border-radius: 10px;
+  background: $light;
+
+  &__icon {
+    display: flex;
+    flex-shrink: 0;
+    width: 12px;
+    height: 12px;
+    fill: #0E344999;
+  }
+}

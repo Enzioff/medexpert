@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="21e3c960-5501-4a61-8f8e-78b1d56dfc86" name="bust" url="http://31.31.198.191">
+        <fileTransfer rootFolder="/home/bitrix/www/" accessType="SFTP" host="109.248.133.230" port="22" sshConfigId="7c7634ca-00a4-4e08-99b8-12848b445777" sshConfig="root@109.248.133.230:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="bf52373e-ae72-4c1b-851d-efa5f239475e" name="livein" url="http://livein.store">
+        <fileTransfer rootFolder="/www/livein.store" host="livein.store" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="ae6dd181-5e69-4932-af94-776589f51721" name="dev">
+        <fileTransfer accessType="SFTP" host="109.248.133.230" port="22" sshConfigId="7c7634ca-00a4-4e08-99b8-12848b445777" sshConfig="root@109.248.133.230:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

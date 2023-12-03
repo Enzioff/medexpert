@@ -1,0 +1,48 @@
+.article-info {
+  display: flex;
+  align-items: center;
+  gap: 57px;
+  border-radius: 10px;
+  padding: 13px 54px 13px 70px;
+  background: $gray;
+
+  @include r(1200) {
+    padding: 13px 24px;
+  }
+
+  &__detail {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__meta {
+    display: flex;
+    gap: 48px;
+    margin-top: 10px;
+
+    @include r(1200) {
+      flex-direction: column-reverse;
+      gap: 10px;
+    }
+  }
+
+  &__picture {
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 374px;
+
+    @include r(1200) {
+      display: none;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

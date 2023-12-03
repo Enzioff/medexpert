@@ -1,0 +1,39 @@
+.partners {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-flow: dense;
+  gap: 30px 36px;
+
+  @include r(1200) {
+    display: flex;
+    overflow: auto;
+    gap: 15px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    height: 110px;
+    background-color: $light;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  &__picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    img {
+      display: block;
+      width: auto;
+      height: auto;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

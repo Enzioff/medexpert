@@ -1,0 +1,19 @@
+.stock {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 30px;
+
+    @include r(1200) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__info {
+    margin-bottom: 50px;
+  }
+}

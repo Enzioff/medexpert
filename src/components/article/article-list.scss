@@ -1,0 +1,23 @@
+.article-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    &::before {
+      content: '';
+      display: flex;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $primary-light;
+    }
+  }
+
+  &__link {
+
+  }
+}

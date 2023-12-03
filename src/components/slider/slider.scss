@@ -1,0 +1,117 @@
+.slider {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  gap: 40px;
+
+  &--visible {
+    .slider__wrapper {
+      overflow: visible;
+    }
+    .swiper-slide {
+      display: flex;
+      width: 100%;
+      opacity: 0;
+      visibility: hidden;
+      transition: .2s linear;
+      &-visible {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    @include r(1200) {
+      gap: 20px;
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid $gray-dark;
+    background-color: $light;
+    cursor: pointer;
+    transition: .2s linear;
+    z-index: 1;
+
+    @include r(1200) {
+      display: none;
+    }
+
+    &:hover {
+      background-color: $primary-light;
+      border-color: $primary-light;
+
+      svg {
+        fill: $light;
+      }
+    }
+
+    &--prev {
+      position: absolute;
+      top: 50%;
+      left: -80px;
+      transform: translateY(-50%);
+
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+
+    &--next {
+      position: absolute;
+      top: 50%;
+      right: -80px;
+      transform: translateY(-50%);
+    }
+
+    &--disabled {
+      opacity: .6;
+      pointer-events: none;
+      background-color: $gray;
+    }
+
+    svg {
+      display: flex;
+      width: 10px;
+      height: 10px;
+      fill: $primary;
+    }
+  }
+
+  &__pagination {
+    display: none;
+    align-items: center;
+    gap: 10px;
+
+    @include r(1200) {
+      display: flex;
+    }
+  }
+
+  &__bullet {
+    display: flex;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: $transparent;
+    transition: .2s linear;
+
+    &--active {
+      width: 20px;
+      background-color: $primary-light;
+    }
+  }
+}

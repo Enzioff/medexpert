@@ -1,0 +1,22 @@
+.info {
+  display: flex;
+  padding: 60px 60px 66px;
+  border-radius: 10px;
+  background-color: $blue-light;
+
+  @include r(1200) {
+    padding: 30px 23px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__text {
+    max-width: 470px;
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+}

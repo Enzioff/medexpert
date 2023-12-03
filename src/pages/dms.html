@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body">
+
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+    <section class="section section--top">
+        <div class="container">
+            <div class="main-search">
+                <form action="#" class="main-search__form">
+                    <svg class="main-search__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
+                    </svg>
+                    <input type="text" class="input" placeholder="Поиск по сайту">
+                    <button class="main-search__button button button--search">Найти</button>
+                </form>
+            </div>
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <span class="breadcrumbs__link">Акции</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section section--gray">
+        <div class="container">
+            <div class="intro">
+                <div class="intro__info">
+                    <h1 class="main-title">ДМС</h1>
+                    <p class="intro__text intro__text--fixed-size">Добровольное медицинское страхование позволяет
+                        получить широкий спектр услуг в различных областях врачебного обслуживания.</p>
+                </div>
+                <picture class="intro__picture intro__picture--blackout">
+                    <img src="./assets/images/intro-doctor.png" alt="">
+                </picture>
+            </div>
+        </div>
+    </section>
+    <section class="section pt-60 pb-80">
+        <div class="container">
+            <h1 class="main-title mb-30">ОМС</h1>
+            <div class="editor editor--full">
+                <h4>Сеть клиник Медэксперт НЕ оказывает услуги по ОМС</h4>
+                <br>
+                <p>
+                    Администрация сети клиник Медэксперт информирует потребителей (пациентов), что оказывает медицинскую
+                    помощь только за счет личных средств граждан или по договору с организациями. Вместе с тем
+                    администрация информирует, что потребитель (пациент) имеет возможность получить соответствующие виды
+                    и объемы медицинской помощи без взимания платы в рамках Программы государственных гарантий
+                    бесплатного оказания гражданам медицинской помощи и Территориальной программой государственных
+                    гарантий бесплатного оказания гражданам медицинской помощи в Калининградской области в медицинских
+                    организациях по месту жительства (прикрепления). Ознакомиться с Территориальной программой
+                    государственных гарантий бесплатного оказания гражданам медицинской помощи можно здесь -
+                    <a href="#">Постановление от 15 февраля 2021 г №61</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="section section--gray pt-80 pb-80">
+        <div class="container">
+            <h2 class="title mb-50">Партнеры по ДМС:</h2>
+            <div class="partners">
+                <div class="partners__item">
+                    <picture class="partners__picture">
+                        <img src="./assets/images/soglasie.png" alt="">
+                    </picture>
+                </div>
+                <div class="partners__item">
+                    <picture class="partners__picture">
+                        <img src="./assets/images/max.png" alt="">
+                    </picture>
+                </div>
+                <div class="partners__item">
+                    <picture class="partners__picture">
+                        <img src="./assets/images/max.png" alt="">
+                    </picture>
+                </div>
+                <div class="partners__item">
+                    <picture class="partners__picture">
+                        <img src="./assets/images/soglasie.png" alt="">
+                    </picture>
+                </div>
+                <div class="partners__item">
+                    <picture class="partners__picture">
+                        <img src="./assets/images/soglasie.png" alt="">
+                    </picture>
+                </div>
+                <div class="partners__item">
+                    <picture class="partners__picture">
+                        <img src="./assets/images/soglasie.png" alt="">
+                    </picture>
+                </div>
+                <div class="partners__item">
+                    <picture class="partners__picture">
+                        <img src="./assets/images/soglasie.png" alt="">
+                    </picture>
+                </div>
+                <div class="partners__item">
+                    <picture class="partners__picture">
+                        <img src="./assets/images/soglasie.png" alt="">
+                    </picture>
+                </div>
+                <div class="partners__item">
+                    <picture class="partners__picture">
+                        <img src="./assets/images/soglasie.png" alt="">
+                    </picture>
+                </div>
+                <div class="partners__item">
+                    <picture class="partners__picture">
+                        <img src="./assets/images/soglasie.png" alt="">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section pt-100 pb-80">
+        <div class="container">
+            <h2 class="title mb-30">Услуги по ДМС:</h2>
+            <div class="columns pb-80">
+                <div class="columns__col columns__col--4">
+                    <a href="#" class="article-type mb-40">
+                        <picture class="article-type__picture">
+                            <img src="./assets/images/icon-no-photo.svg" alt="">
+                        </picture>
+                        <div class="article-type__info">
+                            <h4 class="article-type__title">Общеклинические</h4>
+                        </div>
+                    </a>
+                    <ul class="article-list">
+                        <li class="article-list__item">
+                            <a href="#" class="article-list__link">УЗИ</a>
+                        </li>
+                        <li class="article-list__item">
+                            <a href="#" class="article-list__link">Рентген</a>
+                        </li>
+                        <li class="article-list__item">
+                            <a href="#" class="article-list__link">Флюраграфия</a>
+                        </li>
+                        <li class="article-list__item">
+                            <a href="#" class="article-list__link">Калоноскопия</a>
+                        </li>
+                        <li class="article-list__item">
+                            <a href="#" class="article-list__link">Эндоскопия</a>
+                        </li>
+                        <li class="article-list__item">
+                            <a href="#" class="article-list__link">Другие виды диагностики</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="columns__col columns__col--4">
+                    <a href="#" class="article-type mb-40">
+                        <picture class="article-type__picture">
+                            <img src="./assets/images/icon-no-photo.svg" alt="">
+                        </picture>
+                        <div class="article-type__info">
+                            <h4 class="article-type__title">Общеклинические</h4>
+                        </div>
+                    </a>
+                    <ul class="article-list">
+                        <li class="article-list__item">
+                            <a href="#" class="article-list__link">УЗИ</a>
+                        </li>
+                        <li class="article-list__item">
+                            <a href="#" class="article-list__link">Рентген</a>
+                        </li>
+                        <li class="article-list__item">
+                            <a href="#" class="article-list__link">Флюраграфия</a>
+                        </li>
+                        <li class="article-list__item">
+                            <a href="#" class="article-list__link">Калоноскопия</a>
+                        </li>
+                        <li class="article-list__item">
+                            <a href="#" class="article-list__link">Эндоскопия</a>
+                        </li>
+                        <li class="article-list__item">
+                            <a href="#" class="article-list__link">Другие виды диагностики</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="columns__col columns__col--4">
+                    <a href="#" class="article-type mb-40">
+                        <picture class="article-type__picture">
+                            <img src="./assets/images/icon-no-photo.svg" alt="">
+                        </picture>
+                        <div class="article-type__info">
+                            <h4 class="article-type__title">Общеклинические</h4>
+                        </div>
+                    </a>
+                    <ul class="article-list">
+                        <li class="article-list__item">
+                            <a href="#" class="article-list__link">УЗИ</a>
+                        </li>
+                        <li class="article-list__item">
+                            <a href="#" class="article-list__link">Рентген</a>
+                        </li>
+                        <li class="article-list__item">
+                            <a href="#" class="article-list__link">Флюраграфия</a>
+                        </li>
+                        <li class="article-list__item">
+                            <a href="#" class="article-list__link">Калоноскопия</a>
+                        </li>
+                        <li class="article-list__item">
+                            <a href="#" class="article-list__link">Эндоскопия</a>
+                        </li>
+                        <li class="article-list__item">
+                            <a href="#" class="article-list__link">Другие виды диагностики</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="editor">
+                <h3>В рамках ДМС Медэксперт предлагает:</h3>
+                <br>
+                <ol>
+                    <li>Получение необходимой медицинской помощи в рамках заключенного договора. Для этого будет
+                        использован весь комплекс мероприятий, позволяющих поставить диагноз и провести лечение болезни.
+                    </li>
+                    <li>Предварительная запись, дающая возможность получить медицинское обслуживание без длительного
+                        ожидания и очередей.
+                    </li>
+                    <li>Отлаженную прозрачную систему взаиморасчетов с выдачей всех необходимых финансовых документов.
+                    </li>
+                    <li>Выдачу на руки всех необходимых медицинских документов – результатов диагностик, выписок,
+                        справок, рекомендаций на бумажном или электронном носителе.
+                    </li>
+                    <li>Сохранение в архиве результатов обследования, лечения и электронных вариантов историй болезни
+                        для последующего восстановления данных.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <section class="section pb-100">
+        <div class="container">
+            <div class="faq">
+                <h2 class="title mb-30">Частые вопросы о ДМС</h2>
+                <div class="faq__list">
+                    <div class="accordion accordion--slim" data-accordion>
+                        <div class="accordion__top">
+                            Срочные анализы
+                            <svg class="accordion__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-slim"></use>
+                            </svg>
+                        </div>
+                        <div class="accordion__content">
+                            <article class="article-procedure">
+                                <div class="article-procedure__info">
+                                    <a href="#" class="article-procedure__title">Спермограмма</a>
+                                    <p class="article-procedure__code">Код: 52-20-010</p>
+                                </div>
+                                <div class="price">
+                                    <p class="price__current">2 200 ₽</p>
+                                </div>
+                                <button class="button button--bold button--transparent">Заказать</button>
+                            </article>
+                            <article class="article-procedure">
+                                <div class="article-procedure__info">
+                                    <a href="#" class="article-procedure__title">Adenovirus F40/F41 (кишечные типы вируса)</a>
+                                    <p class="article-procedure__code">Код: 52-20-010</p>
+                                </div>
+                                <div class="price">
+                                    <p class="price__current">2 200 ₽</p>
+                                </div>
+                                <button class="button button--bold button--transparent">Заказать</button>
+                            </article>
+                            <article class="article-procedure">
+                                <div class="article-procedure__info">
+                                    <a href="#" class="article-procedure__title">CD4+ Т‑лимфоциты, % и абсолютное количество</a>
+                                    <p class="article-procedure__code">Код: 52-20-010</p>
+                                </div>
+                                <div class="price">
+                                    <p class="price__current">2 200 ₽</p>
+                                </div>
+                                <button class="button button--bold button--transparent">Заказать</button>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="accordion accordion--slim" data-accordion>
+                        <div class="accordion__top">
+                            Срочные анализы
+                            <svg class="accordion__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-slim"></use>
+                            </svg>
+                        </div>
+                        <div class="accordion__content">
+                            <article class="article-procedure">
+                                <div class="article-procedure__info">
+                                    <a href="#" class="article-procedure__title">Спермограмма</a>
+                                    <p class="article-procedure__code">Код: 52-20-010</p>
+                                </div>
+                                <div class="price">
+                                    <p class="price__current">2 200 ₽</p>
+                                </div>
+                                <button class="button button--bold button--transparent">Заказать</button>
+                            </article>
+                            <article class="article-procedure">
+                                <div class="article-procedure__info">
+                                    <a href="#" class="article-procedure__title">Adenovirus F40/F41 (кишечные типы вируса)</a>
+                                    <p class="article-procedure__code">Код: 52-20-010</p>
+                                </div>
+                                <div class="price">
+                                    <p class="price__current">2 200 ₽</p>
+                                </div>
+                                <button class="button button--bold button--transparent">Заказать</button>
+                            </article>
+                            <article class="article-procedure">
+                                <div class="article-procedure__info">
+                                    <a href="#" class="article-procedure__title">CD4+ Т‑лимфоциты, % и абсолютное количество</a>
+                                    <p class="article-procedure__code">Код: 52-20-010</p>
+                                </div>
+                                <div class="price">
+                                    <p class="price__current">2 200 ₽</p>
+                                </div>
+                                <button class="button button--bold button--transparent">Заказать</button>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="accordion accordion--slim" data-accordion>
+                        <div class="accordion__top">
+                            Срочные анализы
+                            <svg class="accordion__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-slim"></use>
+                            </svg>
+                        </div>
+                        <div class="accordion__content">
+                            <article class="article-procedure">
+                                <div class="article-procedure__info">
+                                    <a href="#" class="article-procedure__title">Спермограмма</a>
+                                    <p class="article-procedure__code">Код: 52-20-010</p>
+                                </div>
+                                <div class="price">
+                                    <p class="price__current">2 200 ₽</p>
+                                </div>
+                                <button class="button button--bold button--transparent">Заказать</button>
+                            </article>
+                            <article class="article-procedure">
+                                <div class="article-procedure__info">
+                                    <a href="#" class="article-procedure__title">Adenovirus F40/F41 (кишечные типы вируса)</a>
+                                    <p class="article-procedure__code">Код: 52-20-010</p>
+                                </div>
+                                <div class="price">
+                                    <p class="price__current">2 200 ₽</p>
+                                </div>
+                                <button class="button button--bold button--transparent">Заказать</button>
+                            </article>
+                            <article class="article-procedure">
+                                <div class="article-procedure__info">
+                                    <a href="#" class="article-procedure__title">CD4+ Т‑лимфоциты, % и абсолютное количество</a>
+                                    <p class="article-procedure__code">Код: 52-20-010</p>
+                                </div>
+                                <div class="price">
+                                    <p class="price__current">2 200 ₽</p>
+                                </div>
+                                <button class="button button--bold button--transparent">Заказать</button>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<%= htmlWebpackPlugin.options.sectionFooter %>
+
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+
+</html>

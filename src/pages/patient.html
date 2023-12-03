@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body">
+
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+    <section class="section section--top">
+        <div class="container">
+            <div class="main-search">
+                <form action="#" class="main-search__form">
+                    <svg class="main-search__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
+                    </svg>
+                    <input type="text" class="input" placeholder="Поиск по сайту">
+                    <button class="main-search__button button button--search">Найти</button>
+                </form>
+            </div>
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <span class="breadcrumbs__link">Акции</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section section--gray">
+        <div class="container">
+            <div class="intro">
+                <div class="intro__info">
+                    <h1 class="main-title">Пациентам</h1>
+                    <p class="intro__text">ООО "МЦ "Медэксперт-5"<br>
+                        Учредители: Колобухов П.В., Колобухов Д.В., Колобухова Т.П.</p>
+                    <a class="link" href="#">ОГРН/ИНН</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section pt-60 pb-100">
+        <div class="container">
+            <div class="head mb-30">
+                <h3 class="title">Как получить результаты анализов</h3>
+                <p class="subtitle">Мы отправим результаты анализов удобным для<br> вас способом без визита в
+                    медицинский центр</p>
+            </div>
+            <div class="grid-services">
+                <article class="article-card">
+                    <svg class="article-card__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-mail"></use>
+                    </svg>
+                    <h3 class="article-card__title">E-mail</h3>
+                    <p class="article-card__text">
+                        Сообщите адрес электронной почты менеджеру или укажите его в форме заказа.
+                    </p>
+                    <p class="article-card__text">
+                        Результаты лабораторных тестов будут отправлены сразу после выполнения
+                    </p>
+                </article>
+                <article class="article-card">
+                    <svg class="article-card__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-mail"></use>
+                    </svg>
+                    <h3 class="article-card__title">E-mail</h3>
+                    <p class="article-card__text">
+                        Сообщите адрес электронной почты менеджеру или укажите его в форме заказа.
+                    </p>
+                    <p class="article-card__text">
+                        Результаты лабораторных тестов будут отправлены сразу после выполнения
+                    </p>
+                </article>
+                <article class="article-card">
+                    <svg class="article-card__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-mail"></use>
+                    </svg>
+                    <h3 class="article-card__title">E-mail</h3>
+                    <p class="article-card__text">
+                        Сообщите адрес электронной почты менеджеру или укажите его в форме заказа.
+                    </p>
+                    <p class="article-card__text">
+                        Результаты лабораторных тестов будут отправлены сразу после выполнения
+                    </p>
+                </article>
+                <article class="article-card">
+                    <svg class="article-card__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-mail"></use>
+                    </svg>
+                    <h3 class="article-card__title">E-mail</h3>
+                    <p class="article-card__text">
+                        Сообщите адрес электронной почты менеджеру или укажите его в форме заказа.
+                    </p>
+                    <p class="article-card__text">
+                        Результаты лабораторных тестов будут отправлены сразу после выполнения
+                    </p>
+                </article>
+                <article class="article-card article-card--dark">
+                    <svg class="article-card__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-mail"></use>
+                    </svg>
+                    <h3 class="article-card__title">
+                        Расшифровку результатов сделаем бесплатно!
+                    </h3>
+                </article>
+                <article class="article-question grid-services__big-item">
+                    <div class="article-question__info">
+                        <h3 class="article-question__title">Спасибо доктор!</h3>
+                        <p class="article-question__text">
+                            Эксперт лабораторной диагностики проконсультирует вас по результатам анализов,
+                            порекомендует
+                            дальнейшее обследование или направит к узкому специалисту.
+                        </p>
+                        <button class="button w-240">Задать вопрос доктору</button>
+                    </div>
+                    <picture class="article-question__picture">
+                        <img src="./assets/images/doctor.png" alt="">
+                    </picture>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="section pb-100">
+        <div class="container">
+            <h3 class="title title--small mb-30">Это важно знать</h3>
+            <div class="columns">
+                <div class="columns__col columns__col--6">
+                    <article class="article-card article-card--faq">
+                        <div class="article-card__picture">
+                            <svg class="article-card__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-mail"></use>
+                            </svg>
+                        </div>
+                        <div class="article-card__info">
+                            <h3 class="article-card__title">
+                                Как правильно подготовиться к сдаче анализов
+                            </h3>
+                            <p class="article-card__text">Правила подготовки отличаются для разных лабораторных
+                                исследований и типа
+                                биоматериала. Заранее уточните у лечащего врача или специалиста лаборатории условия,
+                                которые необходимо соблюдать для получения достоверных результатов.</p>
+                        </div>
+                        <button class="button w-240">Правила подготовки</button>
+                    </article>
+                </div>
+                <div class="columns__col columns__col--6">
+                    <article class="article-card article-card--faq">
+                        <div class="article-card__picture">
+                            <svg class="article-card__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-mail"></use>
+                            </svg>
+                        </div>
+                        <div class="article-card__info">
+                            <h3 class="article-card__title">
+                                Как правильно подготовиться к сдаче анализов
+                            </h3>
+                            <p class="article-card__text">Правила подготовки отличаются для разных лабораторных
+                                исследований и типа
+                                биоматериала. Заранее уточните у лечащего врача или специалиста лаборатории условия,
+                                которые необходимо соблюдать для получения достоверных результатов.</p>
+                        </div>
+                        <button class="button w-240">Правила подготовки</button>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section pb-100">
+        <div class="container">
+            <h3 class="title title--small mb-30">Скидки и дисконтные программы</h3>
+            <div class="slider">
+                <div class="slider__wrapper" data-slider="default">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <article class="article-stock" style="background-image: url('./assets/images/article-photo.png')">
+                                <div class="article-stock__info">
+                                    <h3 class="article-stock__title">Экономим по выходным!</h3>
+                                    <p class="article-stock__text">Комплексные лабораторные<br>исследования</p>
+                                    <p class="article-stock__text">со скидкой до 50%</p>
+                                    <a href="#" class="article-stock__show-more show-more">
+                                        <span>Читать</span>
+                                        <button class="button-arrow">
+                                            <svg class="button-arrow__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow"></use>
+                                            </svg>
+                                        </button>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="article-stock" style="background-image: url('./assets/images/article-photo.png')">
+                                <div class="article-stock__info">
+                                    <h3 class="article-stock__title">Выгодная и удобная<br> диагностика за 1 день!</h3>
+                                    <p class="article-stock__text">диагностические пакеты</p>
+                                    <a href="#" class="article-stock__show-more show-more">
+                                        <span>Читать</span>
+                                        <button class="button-arrow">
+                                            <svg class="button-arrow__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow"></use>
+                                            </svg>
+                                        </button>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="article-stock" style="background-image: url('./assets/images/article-photo.png')">
+                                <div class="article-stock__info">
+                                    <h3 class="article-stock__title">Выгодная и удобная<br> диагностика за 1 день!</h3>
+                                    <p class="article-stock__text">диагностические пакеты</p>
+                                    <a href="#" class="article-stock__show-more show-more">
+                                        <span>Читать</span>
+                                        <button class="button-arrow">
+                                            <svg class="button-arrow__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow"></use>
+                                            </svg>
+                                        </button>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="article-stock" style="background-image: url('./assets/images/article-photo.png')">
+                                <div class="article-stock__info">
+                                    <h3 class="article-stock__title">Выгодная и удобная<br> диагностика за 1 день!</h3>
+                                    <p class="article-stock__text">диагностические пакеты</p>
+                                    <a href="#" class="article-stock__show-more show-more">
+                                        <span>Читать</span>
+                                        <button class="button-arrow">
+                                            <svg class="button-arrow__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow"></use>
+                                            </svg>
+                                        </button>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="slider__button slider__button--prev">
+                        <svg>
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-pointer"></use>
+                        </svg>
+                    </div>
+                    <div class="slider__button slider__button--next">
+                        <svg>
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-pointer"></use>
+                        </svg>
+                    </div>
+                    <div class="slider__pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section pb-100">
+        <div class="container">
+            <div class="columns">
+                <div class="columns__col--6">
+                    <aside class="news">
+                        <div class="title">Последние новости</div>
+                        <div class="news__inner">
+                            <a class="news-card" href="#">
+                                <picture class="news-card__picture">
+                                    <img src="assets/images/news-pic-1.jpg" alt="">
+                                </picture>
+                                <div class="news-card__content">
+                                    <div class="news-card__title">Название новости</div>
+                                    <div class="news-card__text">
+                                        <p>Таким образом консультация с широким активом в значительной степени
+                                            обуславливает создание
+                                            соответствующий условий активизации.</p>
+                                    </div>
+                                    <div class="news-card__date">
+                                        <time class="news-card__time" datetime="2023-01-24">24.01.23</time>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="news-card" href="#">
+                                <picture class="news-card__picture">
+                                    <img src="assets/images/news-pic-1.jpg" alt="">
+                                </picture>
+                                <div class="news-card__content">
+                                    <div class="news-card__title">Название новости</div>
+                                    <div class="news-card__text">
+                                        <p>Таким образом консультация с широким активом в значительной степени
+                                            обуславливает создание
+                                            соответствующий условий активизации.</p>
+                                    </div>
+                                    <div class="news-card__date">
+                                        <time class="news-card__time" datetime="2023-01-24">24.01.23</time>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <button class="button button--fat button--auto">Все новости</button>
+                    </aside>
+                </div>
+                <div class="columns__col--6 columns__col-tab--6 columns__col-mob--12">
+                    <div class="answer">
+                        <div class="title">Ответы на вопросы</div>
+                        <div class="answer__wrapper">
+                            <div class="answer__item" data-accordion>
+                                <div class="answer__top">
+                                    <h3 class="answer__title">Каким способом вшивается сетчатый имплантат при герниопластике пупочной грыжи</h3>
+                                    <button class="button-control button-control--light"></button>
+                                </div>
+                                <div class="answer__content">
+                                    <p class="answer__text">
+                                        Для пупочной грыжи методом выбора является метод IPOMМы используем протез
+                                        Reperen - самораскрывающийся композитный двухслойный нерезорбируемый эндопротез.
+                                        Соответственно, протез располагается непосредственно в брюшинной полости
+                                        касается органов специальным антиадгезивным покрытием Reperen
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="answer__item" data-accordion>
+                                <div class="answer__top">
+                                    <h3 class="answer__title">Каким способом вшивается сетчатый имплантат при герниопластике пупочной грыжи</h3>
+                                    <button class="button-control button-control--light"></button>
+                                </div>
+                                <div class="answer__content">
+                                    <p class="answer__text">
+                                        Для пупочной грыжи методом выбора является метод IPOMМы используем протез
+                                        Reperen - самораскрывающийся композитный двухслойный нерезорбируемый эндопротез.
+                                        Соответственно, протез располагается непосредственно в брюшинной полости
+                                        касается органов специальным антиадгезивным покрытием Reperen
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="answer__toolbox">
+                                <a href="#" class="show-more show-more--dark">
+                                    <span>Все ответы врачей</span>
+                                    <button class="button-arrow button-arrow--dark">
+                                        <svg class="button-arrow__icon">
+                                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow"></use>
+                                        </svg>
+                                    </button>
+                                </a>
+                                <button class="button">Задать вопрос</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section pb-100">
+        <div class="container">
+            <h1 class="title mb-30">Отзывы</h1>
+            <div class="slider">
+                <div class="slider__wrapper" data-slider="extended">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <article class="article-review">
+                                <div class="article-review__content article-review--no-padding">
+                                    <div class="article-review__title">Евгения</div>
+                                    <div class="article-review__text">
+                                        <p>Хочу выразить благодарность замечательному неврологу, профессионалу своего дела. Меня
+                                            давно
+                                            мучили головные боли, я не спала нормально. Обратилась к Туяне Батуевне. Она
+                                            назначила
+                                            мучили головные боли, я не спала нормально. Обратилась к Туяне Батуевне. Она
+                                            назначила
+                                            анализы, подобрала лечение. переживала за меня, беспокоилась. Все помогло и быстро!
+                                            Очень
+                                            внимательный доктор с широким кругозором знаний. Туяна Батуевна, спасибо Вам
+                                            огромное за
+                                            внимательный доктор с широким кругозором знаний. Туяна Батуевна, спасибо Вам
+                                            огромное за
+                                            помощь, за поддержку, за образец высокого звания Врач. С глубоким уважением,
+                                            Евгения.</p>
+                                    </div>
+                                    <div class="article-review__bottom article-review__bottom--line">
+                                        <address class="article-review__address mb-10">
+                                            <a target="_blank" href="https://yandex.ru/maps/-/CCUgb2hVCA">Медэксперт на
+                                                Иванникова</a>
+                                        </address>
+                                        <p class="article-review__bottom-text--accent">Иваненко Людмила Борисовна</p>
+                                        <p class="article-review__bottom-text">Нефролог</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="article-review">
+                                <div class="article-review__content article-review--no-padding">
+                                    <div class="article-review__title">Евгения</div>
+                                    <div class="article-review__text">
+                                        <p>Хочу выразить благодарность замечательному неврологу, профессионалу своего дела. Меня
+                                            давно
+                                            мучили головные боли, я не спала нормально. Обратилась к Туяне Батуевне. Она
+                                            назначила
+                                            мучили головные боли, я не спала нормально. Обратилась к Туяне Батуевне. Она
+                                            назначила
+                                            анализы, подобрала лечение. переживала за меня, беспокоилась. Все помогло и быстро!
+                                            Очень
+                                            внимательный доктор с широким кругозором знаний. Туяна Батуевна, спасибо Вам
+                                            огромное за
+                                            внимательный доктор с широким кругозором знаний. Туяна Батуевна, спасибо Вам
+                                            огромное за
+                                            помощь, за поддержку, за образец высокого звания Врач. С глубоким уважением,
+                                            Евгения.</p>
+                                    </div>
+                                    <div class="article-review__bottom article-review__bottom--line">
+                                        <address class="article-review__address mb-10">
+                                            <a target="_blank" href="https://yandex.ru/maps/-/CCUgb2hVCA">Медэксперт на
+                                                Иванникова</a>
+                                        </address>
+                                        <p class="article-review__bottom-text--accent">Иваненко Людмила Борисовна</p>
+                                        <p class="article-review__bottom-text">Нефролог</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="article-review">
+                                <div class="article-review__content article-review--no-padding">
+                                    <div class="article-review__title">Евгения</div>
+                                    <div class="article-review__text">
+                                        <p>Хочу выразить благодарность замечательному неврологу, профессионалу своего дела. Меня
+                                            давно
+                                            мучили головные боли, я не спала нормально. Обратилась к Туяне Батуевне. Она
+                                            назначила
+                                            мучили головные боли, я не спала нормально. Обратилась к Туяне Батуевне. Она
+                                            назначила
+                                            анализы, подобрала лечение. переживала за меня, беспокоилась. Все помогло и быстро!
+                                            Очень
+                                            внимательный доктор с широким кругозором знаний. Туяна Батуевна, спасибо Вам
+                                            огромное за
+                                            внимательный доктор с широким кругозором знаний. Туяна Батуевна, спасибо Вам
+                                            огромное за
+                                            помощь, за поддержку, за образец высокого звания Врач. С глубоким уважением,
+                                            Евгения.</p>
+                                    </div>
+                                    <div class="article-review__bottom article-review__bottom--line">
+                                        <address class="article-review__address mb-10">
+                                            <a target="_blank" href="https://yandex.ru/maps/-/CCUgb2hVCA">Медэксперт на
+                                                Иванникова</a>
+                                        </address>
+                                        <p class="article-review__bottom-text--accent">Иваненко Людмила Борисовна</p>
+                                        <p class="article-review__bottom-text">Нефролог</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="article-review">
+                                <div class="article-review__content article-review--no-padding">
+                                    <div class="article-review__title">Евгения</div>
+                                    <div class="article-review__text">
+                                        <p>Хочу выразить благодарность замечательному неврологу, профессионалу своего дела. Меня
+                                            давно
+                                            мучили головные боли, я не спала нормально. Обратилась к Туяне Батуевне. Она
+                                            назначила
+                                            мучили головные боли, я не спала нормально. Обратилась к Туяне Батуевне. Она
+                                            назначила
+                                            анализы, подобрала лечение. переживала за меня, беспокоилась. Все помогло и быстро!
+                                            Очень
+                                            внимательный доктор с широким кругозором знаний. Туяна Батуевна, спасибо Вам
+                                            огромное за
+                                            внимательный доктор с широким кругозором знаний. Туяна Батуевна, спасибо Вам
+                                            огромное за
+                                            помощь, за поддержку, за образец высокого звания Врач. С глубоким уважением,
+                                            Евгения.</p>
+                                    </div>
+                                    <div class="article-review__bottom article-review__bottom--line">
+                                        <address class="article-review__address mb-10">
+                                            <a target="_blank" href="https://yandex.ru/maps/-/CCUgb2hVCA">Медэксперт на
+                                                Иванникова</a>
+                                        </address>
+                                        <p class="article-review__bottom-text--accent">Иваненко Людмила Борисовна</p>
+                                        <p class="article-review__bottom-text">Нефролог</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="slider__button slider__button--prev">
+                        <svg>
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-pointer"></use>
+                        </svg>
+                    </div>
+                    <div class="slider__button slider__button--next">
+                        <svg>
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-pointer"></use>
+                        </svg>
+                    </div>
+                    <div class="slider__pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section pb-100">
+        <div class="container">
+            <div class="feedback">
+                <div class="feedback__header">
+                    <h3 class="feedback__title">Запишитесь на консультацию</h3>
+                    <p class="feedback__text">
+                        Укажите свой номер телефона. Мы свяжемся с вами в ближайшее время.
+                    </p>
+                </div>
+                <form action="#" class="form">
+                    <label class="form__item">
+                        <span class="form__input">
+                            <svg class="form__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-phone"></use>
+                            </svg>
+                            <input type="text" class="input" placeholder="+7 ( ___ ) ___-__-__">
+                        </span>
+                        <button class="form__button button">Отправить</button>
+                    </label>
+                    <label class="form__item form__item--accept">
+                        <input type="checkbox" class="check">
+                        <span>Нажимая кнопку отправить вы соглашаетесь с Политикой обработки персональных данных</span>
+                    </label>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<%= htmlWebpackPlugin.options.sectionFooter %>
+
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+
+</html>

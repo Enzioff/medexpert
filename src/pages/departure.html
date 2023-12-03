@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body">
+
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+    <section class="section section--top">
+        <div class="container">
+            <div class="main-search">
+                <form action="#" class="main-search__form">
+                    <svg class="main-search__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
+                    </svg>
+                    <input type="text" class="input" placeholder="Поиск по сайту">
+                    <button class="main-search__button button button--search">Найти</button>
+                </form>
+            </div>
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <span class="breadcrumbs__link">Акции</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section section--gray">
+        <div class="container">
+            <div class="intro">
+                <div class="intro__info">
+                    <h1 class="main-title">Выезд на дом</h1>
+                    <p class="intro__text">Анализы дома и в офисе. Выезд врачей и медсестер - это удобно и
+                        безопасно.</p>
+                    <button class="button w-200">Оформить заявку</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section pt-30 pb-50">
+        <div class="container">
+            <div class="columns">
+                <div class="columns__col columns__col--4">
+                    <article class="article-time">
+                        <svg class="article-time__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-sand-clock"></use>
+                        </svg>
+                        <div class="article-time__info">
+                            <h3 class="article-time__title">График работы службы:</h3>
+                            <p class="article-time__text">Пн-Вс - с 7:00 до 19:30</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="columns__col columns__col--4">
+                    <article class="article-time">
+                        <svg class="article-time__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-call"></use>
+                        </svg>
+                        <div class="article-time__info">
+                            <h3 class="article-time__title">Номер телефона</h3>
+                            <p class="article-time__text">8 (4012) 51-90-00</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="columns__col columns__col--4">
+                    <article class="article-time">
+                        <svg class="article-time__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-wallet"></use>
+                        </svg>
+                        <div class="article-time__info">
+                            <h3 class="article-time__title">Стоимость вызова</h3>
+                            <p class="article-time__text">1650 руб - 3000 руб</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section pb-60">
+        <div class="container">
+            <div class="head mb-20">
+                <h2 class="title">Сдача анализов на дому</h2>
+                <p class="subtitle subtitle--primary">По Калининграду и Калининградской области в пределах
+                    30км
+                </p>
+            </div>
+            <p class="text text--medium">
+                Квалифицированная медицинская помощь у вас дома. Медицинский персонал имеет при себе полный
+                комплект необходимых медицинских инструментов, строго соблюдает санитарно-гигиенические нормы и
+                протоколы диагностики и лечения. Выезд на дом - это удобно и совершенно безопасно.
+            </p>
+        </div>
+    </section>
+    <section class="section pb-100">
+        <div class="container">
+            <div class="head mb-20">
+                <h3 class="title title--small">Какие анализы можно сдать:</h3>
+                <p class="text text--medium">
+                    Выездная служба выполняет взятие крови и мазков из рото - и носоглотки,
+                    а также принимает мочу, кал.Вы можете сдать большинство востребованных исследований дома.В
+                    лаборатории СИТИЛАБ доступен широкий спектр исследований для диагностики заболеваний и
+                    профилактического обследования организма:
+                </p>
+            </div>
+            <div class="grid-cards grid-cards--more">
+                <a href="#" class="article-type">
+                    <picture class="article-type__picture">
+                        <img src="./assets/images/icon-no-photo.svg" alt="">
+                    </picture>
+                    <div class="article-type__info">
+                        <h4 class="article-type__title">ПЦР-диагностика</h4>
+                    </div>
+                </a>
+                <a href="#" class="article-type">
+                    <picture class="article-type__picture">
+                        <img src="./assets/images/icon-no-photo.svg" alt="">
+                    </picture>
+                    <div class="article-type__info">
+                        <h4 class="article-type__title">Бактериологические</h4>
+                    </div>
+                </a>
+                <a href="#" class="article-type">
+                    <picture class="article-type__picture">
+                        <img src="./assets/images/icon-no-photo.svg" alt="">
+                    </picture>
+                    <div class="article-type__info">
+                        <h4 class="article-type__title">Иммунологические</h4>
+                    </div>
+                </a>
+                <a href="#" class="article-type">
+                    <picture class="article-type__picture">
+                        <img src="./assets/images/icon-no-photo.svg" alt="">
+                    </picture>
+                    <div class="article-type__info">
+                        <h4 class="article-type__title">Биохимические</h4>
+                    </div>
+                </a>
+                <a href="#" class="article-type">
+                    <picture class="article-type__picture">
+                        <img src="./assets/images/icon-no-photo.svg" alt="">
+                    </picture>
+                    <div class="article-type__info">
+                        <h4 class="article-type__title">Генетические</h4>
+                    </div>
+                </a>
+                <a href="#" class="article-type">
+                    <picture class="article-type__picture">
+                        <img src="./assets/images/icon-no-photo.svg" alt="">
+                    </picture>
+                    <div class="article-type__info">
+                        <h4 class="article-type__title">Общеклинические</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="section pb-100">
+        <div class="container">
+            <div class="head mb-20">
+                <h2 class="title">Анализы не доступные для заказа через выездную службу:</h2>
+                <p class="subtitle subtitle--primary">
+                    * Более подробную информацию о доступных исследованиях уточняйте у оператора при оформлении
+                    заявки.
+                </p>
+            </div>
+            <div class="editor">
+                <ul>
+                    <li>Взятие урогенитальных мазков и соскобов</li>
+                    <li>Выездная бригада не берет на дому гинекологические мазки</li>
+                    <li>Взятие соскобов на демодекс</li>
+                    <li>Взятие секрета предстательной железы</li>
+                    <li>Взятие мазков из раны</li>
+                    <li>Пункции, биопсии и другие хирургические действия</li>
+                    <li>Соскоб кожи</li>
+                    <li>Глюкозотолерантный тест</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section pb-100">
+        <div class="container">
+            <div class="head mb-30">
+                <h2 class="title">Для кого актуальна услуга выезда на дом:</h2>
+            </div>
+            <div class="grid-cards grid-cards--equalize">
+                <article class="article-relevant" style="background: #E0ECF9">
+                    <picture class="article-relevant__picture">
+                        <img
+                            src="https://catherineasquithgallery.com/uploads/posts/2021-02/1614282221_80-p-chernii-fon-laika-98.jpg"
+                            alt="">
+                    </picture>
+                    <div class="article-relevant__info">
+                        <h4 class="article-relevant__title">Детям и родителям</h4>
+                        <p class="article-relevant__text">
+                            Ребенок испытывает минимум стресса, так как сдает анализы в спокойной домашней
+                            обстановке. Опытная медсестра аккуратно примет анализы у ребенка любого возраста.
+                        </p>
+                    </div>
+                </article>
+                <article class="article-relevant" style="background: #D4F4D9">
+                    <picture class="article-relevant__picture">
+                        <img
+                            src="https://catherineasquithgallery.com/uploads/posts/2021-02/1614282221_80-p-chernii-fon-laika-98.jpg"
+                            alt="">
+                    </picture>
+                    <div class="article-relevant__info">
+                        <h4 class="article-relevant__title">Детям и родителям</h4>
+                        <p class="article-relevant__text">
+                            Ребенок испытывает минимум стресса, так как сдает анализы в спокойной домашней
+                            обстановке. Опытная медсестра аккуратно примет анализы у ребенка любого возраста.
+                        </p>
+                    </div>
+                </article>
+                <article class="article-relevant" style="background: #F9EFE0">
+                    <picture class="article-relevant__picture">
+                        <img
+                            src="https://catherineasquithgallery.com/uploads/posts/2021-02/1614282221_80-p-chernii-fon-laika-98.jpg"
+                            alt="">
+                    </picture>
+                    <div class="article-relevant__info">
+                        <h4 class="article-relevant__title">Детям и родителям</h4>
+                        <p class="article-relevant__text">
+                            Ребенок испытывает минимум стресса, так как сдает анализы в спокойной домашней
+                            обстановке. Опытная медсестра аккуратно примет анализы у ребенка любого возраста.
+                        </p>
+                    </div>
+                </article>
+                <article class="article-relevant" style="background: #F6E9E9">
+                    <picture class="article-relevant__picture">
+                        <img
+                            src="https://catherineasquithgallery.com/uploads/posts/2021-02/1614282221_80-p-chernii-fon-laika-98.jpg"
+                            alt="">
+                    </picture>
+                    <div class="article-relevant__info">
+                        <h4 class="article-relevant__title">Детям и родителям</h4>
+                        <p class="article-relevant__text">
+                            Ребенок испытывает минимум стресса, так как сдает анализы в спокойной домашней
+                            обстановке. Опытная медсестра аккуратно примет анализы у ребенка любого возраста.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="section pb-100">
+        <div class="container">
+            <div class="head mb-20">
+                <h3 class="title">Как получить результаты анализов</h3>
+                <p class="subtitle">Мы отправим результаты анализов удобным для<br> вас способом без визита в
+                    медицинский центр</p>
+            </div>
+            <div class="grid-services">
+                <article class="article-card">
+                    <svg class="article-card__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-mail"></use>
+                    </svg>
+                    <h3 class="article-card__title">E-mail</h3>
+                    <p class="article-card__text">
+                        Сообщите адрес электронной почты менеджеру или укажите его в форме заказа.
+                    </p>
+                    <p class="article-card__text">
+                        Результаты лабораторных тестов будут отправлены сразу после выполнения
+                    </p>
+                </article>
+                <article class="article-card">
+                    <svg class="article-card__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-mail"></use>
+                    </svg>
+                    <h3 class="article-card__title">E-mail</h3>
+                    <p class="article-card__text">
+                        Сообщите адрес электронной почты менеджеру или укажите его в форме заказа.
+                    </p>
+                    <p class="article-card__text">
+                        Результаты лабораторных тестов будут отправлены сразу после выполнения
+                    </p>
+                </article>
+                <article class="article-card">
+                    <svg class="article-card__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-mail"></use>
+                    </svg>
+                    <h3 class="article-card__title">E-mail</h3>
+                    <p class="article-card__text">
+                        Сообщите адрес электронной почты менеджеру или укажите его в форме заказа.
+                    </p>
+                    <p class="article-card__text">
+                        Результаты лабораторных тестов будут отправлены сразу после выполнения
+                    </p>
+                </article>
+                <article class="article-card">
+                    <svg class="article-card__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-mail"></use>
+                    </svg>
+                    <h3 class="article-card__title">E-mail</h3>
+                    <p class="article-card__text">
+                        Сообщите адрес электронной почты менеджеру или укажите его в форме заказа.
+                    </p>
+                    <p class="article-card__text">
+                        Результаты лабораторных тестов будут отправлены сразу после выполнения
+                    </p>
+                </article>
+                <article class="article-card article-card--dark">
+                    <svg class="article-card__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-mail"></use>
+                    </svg>
+                    <h3 class="article-card__title">
+                        Расшифровку результатов сделаем бесплатно!
+                    </h3>
+                </article>
+                <article class="article-question grid-services__big-item">
+                    <div class="article-question__info">
+                        <h3 class="article-question__title">Спасибо доктор!</h3>
+                        <p class="article-question__text">
+                            Эксперт лабораторной диагностики проконсультирует вас по результатам анализов,
+                            порекомендует
+                            дальнейшее обследование или направит к узкому специалисту.
+                        </p>
+                        <button class="button w-240 mt-a">Задать вопрос доктору</button>
+                    </div>
+                    <picture class="article-question__picture">
+                        <img src="./assets/images/doctor.png" alt="">
+                    </picture>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="section pb-40">
+        <div class="container">
+            <h3 class="title title--small mb-30">Это важно знать</h3>
+            <div class="columns">
+                <div class="columns__col columns__col--6">
+                    <article class="article-card article-card--faq">
+                        <div class="article-card__picture">
+                            <svg class="article-card__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-mail"></use>
+                            </svg>
+                        </div>
+                        <div class="article-card__info">
+                            <h3 class="article-card__title">
+                                Как правильно подготовиться к сдаче анализов
+                            </h3>
+                            <p class="article-card__text">Правила подготовки отличаются для разных лабораторных
+                                исследований и типа
+                                биоматериала. Заранее уточните у лечащего врача или специалиста лаборатории условия,
+                                которые необходимо соблюдать для получения достоверных результатов.</p>
+                        </div>
+                        <button class="button w-240">Правила подготовки</button>
+                    </article>
+                </div>
+                <div class="columns__col columns__col--6">
+                    <article class="article-card article-card--faq">
+                        <div class="article-card__picture">
+                            <svg class="article-card__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-mail"></use>
+                            </svg>
+                        </div>
+                        <div class="article-card__info">
+                            <h3 class="article-card__title">
+                                Как правильно подготовиться к сдаче анализов
+                            </h3>
+                            <p class="article-card__text">Правила подготовки отличаются для разных лабораторных
+                                исследований и типа
+                                биоматериала. Заранее уточните у лечащего врача или специалиста лаборатории условия,
+                                которые необходимо соблюдать для получения достоверных результатов.</p>
+                        </div>
+                        <button class="button w-240">Правила подготовки</button>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section pb-100">
+        <div class="container">
+            <div class="feedback">
+                <div class="feedback__header">
+                    <h3 class="feedback__title">Запишитесь на консультацию</h3>
+                    <p class="feedback__text">
+                        Укажите свой номер телефона. Мы свяжемся с вами в ближайшее время.
+                    </p>
+                </div>
+                <form action="#" class="form">
+                    <label class="form__item">
+                        <span class="form__input">
+                            <svg class="form__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-phone"></use>
+                            </svg>
+                            <input type="text" class="input" placeholder="+7 ( ___ ) ___-__-__">
+                        </span>
+                        <button class="form__button button">Отправить</button>
+                    </label>
+                    <label class="form__item form__item--accept">
+                        <input type="checkbox" class="check">
+                        <span>Нажимая кнопку отправить вы соглашаетесь с Политикой обработки персональных данных</span>
+                    </label>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<%= htmlWebpackPlugin.options.sectionFooter %>
+
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+
+</html>

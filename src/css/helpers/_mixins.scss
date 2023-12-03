@@ -1,0 +1,19 @@
+@use "sass:math";
+
+// width
+@mixin r($width) {
+  @media only screen and (max-width: $width+ "px") {
+    @content
+  }
+}
+
+@mixin text($size) {
+  @if $size != 14 {
+    font-size: $size;
+  } @else {
+    font-size: 16px;
+  }
+  font-weight: 300;
+  line-height: normal;
+  color: $primary;
+}

@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Карточка центра</title>
+<link href="./css/main.css" rel="stylesheet"></head>
+
+<body class="body">
+
+<section class="top-header">
+    <div class="container">
+        <div class="top-header__wrapper">
+            <a href="tel:+7 (4012) 519-000" class="phone">+7 (4012) 519-000</a>
+            <nav class="user-nav">
+                <a href="#" class="user-nav__link">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-eye"></use>
+                    </svg>
+                </a>
+                <a href="#" class="user-nav__link">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
+                    </svg>
+                </a>
+                <a href="#" class="user-nav__link">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-cart"></use>
+                    </svg>
+                    <span>Корзина</span>
+                </a>
+                <a href="#" class="user-nav__link">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-case"></use>
+                    </svg>
+                    <span>Расшифровка</span>
+                </a>
+                <a href="#" class="user-nav__link">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-person"></use>
+                    </svg>
+                    <span>Личный кабинет</span>
+                </a>
+            </nav>
+            <div class="burger" data-menu-open>
+                <span class="burger__item"></span>
+            </div>
+            <div class="menu-mobile" data-menu>
+                <a href="#" class="user">
+                    <picture class="user__picture">
+                        <img src="https://mykaleidoscope.ru/uploads/posts/2021-11/1636710348_1-mykaleidoscope-ru-p-devushka-v-solnechnikh-ochkakh-devushka-kr-1.jpg" alt="">
+                    </picture>
+                    <div class="user__info">
+                        <h3 class="user__name">Екатерина Птушкина</h3>
+                        <h3 class="user__mail">info@mail.ru</h3>
+                    </div>
+                </a>
+                <div class="search">
+                    <input type="text" class="input" placeholder="Поиск">
+                    <button class="button-arrow button-arrow--big">
+                        <svg class="button-arrow__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow"></use>
+                        </svg>
+                    </button>
+                </div>
+                <nav class="menu-mobile__nav">
+                    <a href="#" class="menu-mobile__link">Корзина</a>
+                    <a href="#" class="menu-mobile__link">Расшифровка</a>
+                    <a href="#" class="menu-mobile__link">Акции</a>
+                    <a href="#" class="menu-mobile__link">Анализы</a>
+                    <a href="#" class="menu-mobile__link">Выезд на дом</a>
+                    <a href="#" class="menu-mobile__link">Адреса</a>
+                    <a href="#" class="menu-mobile__link">Пациентам</a>
+                    <a href="#" class="menu-mobile__link">О компании</a>
+                </nav>
+                <div class="menu-mobile__exit">
+                    <svg class="menu-mobile__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-exit"></use>
+                    </svg>
+                    <span>Выйти</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <a href="#" class="logo">
+                <img src="./assets/images/icon-logo.svg" alt="">
+            </a>
+            <nav class="nav">
+                <a href="#" class="nav__link">Акции</a>
+                <a href="#" class="nav__link">Анализы</a>
+                <a href="#" class="nav__link">Выезд на дом</a>
+                <a href="#" class="nav__link">Адреса</a>
+                <a href="#" class="nav__link">Пациентам</a>
+                <a href="#" class="nav__link">О компании</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+    <section class="section section--top">
+        <div class="container">
+            <div class="breadcrumbs pt-20">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <span class="breadcrumbs__link">Акции</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section section--gray">
+        <div class="container">
+            <div class="intro intro--column">
+                <div class="intro__info mb-70">
+                    <h1 class="main-title">Диагностическая лаборатория</h1>
+                    <p class="intro__text">Краткое описание центра</p>
+                </div>
+
+                <div class="intro__detail mb-30">
+                    <p class="text">График работы:</p>
+                    <p class="text">Будни, Сб, Вс: c 8:00 до 21:00</p>
+                </div>
+
+                <div class="intro__contacts">
+                    <p class="text text--big">8 (4012) 51-90-00</p>
+                    <p class="text">Калининград, ул. Космическая, 29</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section pt-40 pb-100">
+        <div class="container">
+            <div class="tabs">
+                <div class="tabs__head">
+                    <p class="tabs__element active" data-tabs-head="0">О клинике</p>
+                    <p class="tabs__element" data-tabs-head="1">Услуги</p>
+                    <p class="tabs__element" data-tabs-head="2">Врачи</p>
+                    <p class="tabs__element" data-tabs-head="3">Отзывы</p>
+                </div>
+                <div class="tabs__body">
+                    <div class="tabs__content active" data-tabs-content="0">
+                        <h2 class="title mb-30">Информация</h2>
+                        <p class="text text--medium mb-20">Заместитель главного врача по клинико-диагностической
+                            лаборатории - <strong class="color color--primary-light">Грибло Оксана Ромуальдовна</strong>
+                        </p>
+                        <div class="columns mb-50">
+                            <div class="columns__col columns__col--4">
+                                <a class="article-doc" href="#">
+                                    <svg class="article-doc__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-doc"></use>
+                                    </svg>
+                                    <span>Сертификаты лаборатории</span>
+                                </a>
+                            </div>
+                            <div class="columns__col columns__col--4">
+                                <a class="article-doc" href="#">
+                                    <svg class="article-doc__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-doc"></use>
+                                    </svg>
+                                    <span>Подготовка к лабораторным исследованиям </span>
+                                </a>
+                            </div>
+                            <div class="columns__col columns__col--4">
+                                <a class="article-doc" href="#">
+                                    <svg class="article-doc__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-doc"></use>
+                                    </svg>
+                                    <span>Прейскурант</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="columns mb-30">
+                            <div class="columns__col columns__col--6">
+                                <a href="#video" class="video video--border video--fix-size" data-fancybox data-src="#video">
+                                    <picture class="video__picture">
+                                        <img src="./assets/images/preview.jpg" alt="">
+                                    </picture>
+                                    <button class="video__button">
+                                        <svg>
+                                            <use xlink:href="./assets/sprite/sprite.svg#icon-play"></use>
+                                        </svg>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="columns__col columns__col--6">
+                                <p class="text text--medium mb-40">
+                                    Материалы на исследования принимаются во всех клиниках сети Медэксперт в будние
+                                    и выходные дни. Прием материалов на исследования начинается с открытия клиники и
+                                    заканчивается за час до закрытия клиники.<br>
+                                    Срок выполнения анализа действителен с момента поступления материала в
+                                    лабораторию.
+                                </p>
+                                <strong class="text mb-15">
+                                    Уточняйте режим работы клиник на сайте или по телефону
+                                </strong>
+                                <a class="link link--dot link--big" href="tel:+74012519000">8 (4012) 51-90-00</a>
+                            </div>
+                        </div>
+                        <p class="text text--medium color--primary-light mb-30">
+                            Внимание! Срочное выполнение лабораторного исследования (анализа) рассчитывается по двойному
+                            тарифу. Срочное выполнение анализа (CITO) не распространяется на Бактериологические
+                            исследования, Аллергодиагностику, Т-SPOT.TB (диагностика туберкулезной инфекции),
+                            Гистологию, ПЦР диагностику, Исследования выделения половых органов; Акции лаборатории,
+                            Профили исследований.Забор биоматериала для срочного проведения исследования (анализа)
+                            (биоматериал кровь, моча, кал) проводится по адресу Космическая, 29.Забор биоматериала для
+                            срочного проведения исследования (анализа) из разделов ИММУНОГЕМАТОЛОГИЯ (группа, крови,
+                            резус-фактор и тд); ЦИТОЛОГИЯ проводится по адресу ул. Леонова, 8.Прием биоматериала по CITO
+                            до 18 часов.
+                        </p>
+                        <p class="text text--medium">
+                            За 20 лет работы сети семейных клиник «Медэксперт» Клинико-диагностическая лаборатория
+                            развилась в мощный диагностический комплекс. Основополагающий принцип работы лаборатории -
+                            используя лучшие методики, технологии, материалы и оборудование, проводить диагностику на
+                            уровне мировых стандартов.Качество лабораторных исследований КДЛ «Медэксперт» гарантируется
+                            регулярным проведением федеральных и международных программ контроля качества: ФСВОК
+                            (Федеральная Система Внешней Оценки Качества клинических лабораторных исследований
+                            (Россия)); RIQAS – Randox (Великобритания); EQAS – BIO-Rad (США).И специалисту медику и
+                            обычному человеку, обратившемуся за медицинской помощью, известно, что лабораторное
+                            обследование пациента имеет большое значение в постановке диагноза и контроле лечения. При
+                            этом очень важны как точность результата, сроки выполнения, стоимость, так и возможность
+                            комплексно выполнить все исследования в одной лаборатории. Клинико-диагностическая
+                            лаборатория сети семейных клиник «Медэксперт» соответствует требованиям и условиям
+                            настоящего времени и предлагает современнейшую лабораторную диагностику. Лаборатория
+                            оснащена новым высокотехнологичным оборудованием, что обеспечивает высокую
+                            производительность и качество результатов.
+                        </p>
+                        <div class="placeholder mt-40 mb-40">
+                            <h3 class="placeholder__title title">Заголовок</h3>
+                            <p class="placeholder__text">
+                                Профессионалы своего дела, врачи-лаборанты КДЛ «Медэксперт», следят за выполнением
+                                исследований и готовы дать консультацию по полученному результату.
+                            </p>
+                        </div>
+                        <p class="text text--medium mb-30">
+                            Для выполнения <strong>общего анализа крови, подсчета лейкоцитарной формулы</strong>
+                            используются анализаторы
+                            производства Sysmex Corporation (Япония). используемые нами анализаторы SYSMEX принадлежат к
+                            X и N серии, это серии современных высокоточных гематологических анализаторов, объединенных
+                            общими технологиями. Новый гематологический анализатор основан на революционной технологии
+                            проточной цитометрии, гарантирующей точные результаты и возможность четкого разделения
+                            нормальных и патологических образцов. Вызывающие сомнения пробы автоматически передаются на
+                            расширенный анализ.
+                        </p>
+                        <p class="text text--medium">
+                            <strong>Биохимические исследования крови и мочи</strong>, показатели которых позволяют врачу
+                            диагностировать
+                            состояние внутренних органов и систем организма человека, выполняются на биохимических
+                            анализаторах Cobas Integra400 (Япония) и ILab Taurus (Италия) Высокотехнологичные
+                            биохимические анализаторы, позволяющие работать 24 часа в сутки с производительностью до 875
+                            тестов в час, обеспечивают широкий спектр биохимических исследований с использованием
+                            зарубежных и российских реагентов. На данный момент лаборатория выполняет более 60 различных
+                            видов биохимических исследований.
+                        </p>
+                    </div>
+                    <div class="tabs__content" data-tabs-content="1">
+                        <div class="services">
+                            <h3 class="title">Предоставляемые услуги</h3>
+                            <div class="services__grid">
+                                <a href="#" class="services__item">
+                                    <h4 class="services__title">Репродуктивная функция</h4>
+                                </a>
+                                <a href="#" class="services__item">
+                                    <h4 class="services__title">Репродуктивная функция</h4>
+                                </a>
+                                <a href="#" class="services__item services__item--big">
+                                    <h4 class="services__title">Репродуктивная функция</h4>
+                                </a>
+                                <a href="#" class="services__item services__item--big">
+                                    <h4 class="services__title">Репродуктивная функция</h4>
+                                </a>
+                                <a href="#" class="services__item">
+                                    <h4 class="services__title">Репродуктивная функция</h4>
+                                </a>
+                                <a href="#" class="services__item">
+                                    <h4 class="services__title">Репродуктивная функция</h4>
+                                </a>
+                                <a href="#" class="services__item">
+                                    <h4 class="services__title">Репродуктивная функция</h4>
+                                </a>
+                                <a href="#" class="services__item">
+                                    <h4 class="services__title">Репродуктивная функция</h4>
+                                </a>
+                                <a href="#" class="services__item services__item--big">
+                                    <h4 class="services__title">Репродуктивная функция</h4>
+                                </a>
+                            </div>
+                            <a href="#" class="services__question centered">Показать все</a>
+                        </div>
+                    </div>
+                    <div class="tabs__content" data-tabs-content="3">
+                        <div class="head head--control mb-40">
+                            <h2 class="title">Отзывы</h2>
+                            <a href="#">Читать все отзывы</a>
+                        </div>
+                        <div class="slider">
+                            <div class="slider__wrapper" data-slider="extended">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <article class="article-review">
+                                            <div class="article-review__content article-review--no-padding">
+                                                <div class="article-review__title">Евгения</div>
+                                                <div class="article-review__text">
+                                                    <p>Хочу выразить благодарность замечательному неврологу, профессионалу своего дела. Меня
+                                                        давно
+                                                        мучили головные боли, я не спала нормально. Обратилась к Туяне Батуевне. Она
+                                                        назначила
+                                                        мучили головные боли, я не спала нормально. Обратилась к Туяне Батуевне. Она
+                                                        назначила
+                                                        анализы, подобрала лечение. переживала за меня, беспокоилась. Все помогло и быстро!
+                                                        Очень
+                                                        внимательный доктор с широким кругозором знаний. Туяна Батуевна, спасибо Вам
+                                                        огромное за
+                                                        внимательный доктор с широким кругозором знаний. Туяна Батуевна, спасибо Вам
+                                                        огромное за
+                                                        помощь, за поддержку, за образец высокого звания Врач. С глубоким уважением,
+                                                        Евгения.</p>
+                                                </div>
+                                                <div class="article-review__bottom article-review__bottom--line">
+                                                    <address class="article-review__address mb-10">
+                                                        <a target="_blank" href="https://yandex.ru/maps/-/CCUgb2hVCA">Медэксперт на
+                                                            Иванникова</a>
+                                                    </address>
+                                                    <p class="article-review__bottom-text--accent">Иваненко Людмила Борисовна</p>
+                                                    <p class="article-review__bottom-text">Нефролог</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <article class="article-review">
+                                            <div class="article-review__content article-review--no-padding">
+                                                <div class="article-review__title">Евгения</div>
+                                                <div class="article-review__text">
+                                                    <p>Хочу выразить благодарность замечательному неврологу, профессионалу своего дела. Меня
+                                                        давно
+                                                        мучили головные боли, я не спала нормально. Обратилась к Туяне Батуевне. Она
+                                                        назначила
+                                                        мучили головные боли, я не спала нормально. Обратилась к Туяне Батуевне. Она
+                                                        назначила
+                                                        анализы, подобрала лечение. переживала за меня, беспокоилась. Все помогло и быстро!
+                                                        Очень
+                                                        внимательный доктор с широким кругозором знаний. Туяна Батуевна, спасибо Вам
+                                                        огромное за
+                                                        внимательный доктор с широким кругозором знаний. Туяна Батуевна, спасибо Вам
+                                                        огромное за
+                                                        помощь, за поддержку, за образец высокого звания Врач. С глубоким уважением,
+                                                        Евгения.</p>
+                                                </div>
+                                                <div class="article-review__bottom article-review__bottom--line">
+                                                    <address class="article-review__address mb-10">
+                                                        <a target="_blank" href="https://yandex.ru/maps/-/CCUgb2hVCA">Медэксперт на
+                                                            Иванникова</a>
+                                                    </address>
+                                                    <p class="article-review__bottom-text--accent">Иваненко Людмила Борисовна</p>
+                                                    <p class="article-review__bottom-text">Нефролог</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <article class="article-review">
+                                            <div class="article-review__content article-review--no-padding">
+                                                <div class="article-review__title">Евгения</div>
+                                                <div class="article-review__text">
+                                                    <p>Хочу выразить благодарность замечательному неврологу, профессионалу своего дела. Меня
+                                                        давно
+                                                        мучили головные боли, я не спала нормально. Обратилась к Туяне Батуевне. Она
+                                                        назначила
+                                                        мучили головные боли, я не спала нормально. Обратилась к Туяне Батуевне. Она
+                                                        назначила
+                                                        анализы, подобрала лечение. переживала за меня, беспокоилась. Все помогло и быстро!
+                                                        Очень
+                                                        внимательный доктор с широким кругозором знаний. Туяна Батуевна, спасибо Вам
+                                                        огромное за
+                                                        внимательный доктор с широким кругозором знаний. Туяна Батуевна, спасибо Вам
+                                                        огромное за
+                                                        помощь, за поддержку, за образец высокого звания Врач. С глубоким уважением,
+                                                        Евгения.</p>
+                                                </div>
+                                                <div class="article-review__bottom article-review__bottom--line">
+                                                    <address class="article-review__address mb-10">
+                                                        <a target="_blank" href="https://yandex.ru/maps/-/CCUgb2hVCA">Медэксперт на
+                                                            Иванникова</a>
+                                                    </address>
+                                                    <p class="article-review__bottom-text--accent">Иваненко Людмила Борисовна</p>
+                                                    <p class="article-review__bottom-text">Нефролог</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <article class="article-review">
+                                            <div class="article-review__content article-review--no-padding">
+                                                <div class="article-review__title">Евгения</div>
+                                                <div class="article-review__text">
+                                                    <p>Хочу выразить благодарность замечательному неврологу, профессионалу своего дела. Меня
+                                                        давно
+                                                        мучили головные боли, я не спала нормально. Обратилась к Туяне Батуевне. Она
+                                                        назначила
+                                                        мучили головные боли, я не спала нормально. Обратилась к Туяне Батуевне. Она
+                                                        назначила
+                                                        анализы, подобрала лечение. переживала за меня, беспокоилась. Все помогло и быстро!
+                                                        Очень
+                                                        внимательный доктор с широким кругозором знаний. Туяна Батуевна, спасибо Вам
+                                                        огромное за
+                                                        внимательный доктор с широким кругозором знаний. Туяна Батуевна, спасибо Вам
+                                                        огромное за
+                                                        помощь, за поддержку, за образец высокого звания Врач. С глубоким уважением,
+                                                        Евгения.</p>
+                                                </div>
+                                                <div class="article-review__bottom article-review__bottom--line">
+                                                    <address class="article-review__address mb-10">
+                                                        <a target="_blank" href="https://yandex.ru/maps/-/CCUgb2hVCA">Медэксперт на
+                                                            Иванникова</a>
+                                                    </address>
+                                                    <p class="article-review__bottom-text--accent">Иваненко Людмила Борисовна</p>
+                                                    <p class="article-review__bottom-text">Нефролог</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <div class="slider__button slider__button--prev">
+                                    <svg>
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-pointer"></use>
+                                    </svg>
+                                </div>
+                                <div class="slider__button slider__button--next">
+                                    <svg>
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-pointer"></use>
+                                    </svg>
+                                </div>
+                                <div class="slider__pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <a href="#" class="footer__logo logo desktop-hidden order-m-n1">
+                <img src="./assets/images/icon-logo.svg" alt="">
+            </a>
+            <div class="footer__detail order-m-1">
+                <a href="#" class="footer__logo logo mob-hidden">
+                    <img src="./assets/images/icon-logo.svg" alt="">
+                </a>
+                <a href="tel:+74012519000" class="footer__phone phone order-m-1">+7 (4012) 519-000</a>
+                <div class="footer__social social order-m-0">
+                    <button class="button desktop-hidden">Выезд на дом</button>
+                    <a href="#" class="social__link">
+                        <svg class="social__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-vk"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="social__link">
+                        <svg class="social__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-yt"></use>
+                        </svg>
+                    </a>
+                </div>
+                <p class="footer__text order-m-n1">Контакты</p>
+                <a href="#" class="footer__link footer__link--underline order-m-2">Политика конфидециальности</a>
+                <p class="footer__copyright copyright order-m-3">
+                    © ООО “Медэксперт”<br>
+                    Все права защищены 2023
+                </p>
+            </div>
+            <div class="footer__nav order-m-0">
+                <div class="footer__item">
+                    <h4 class="footer__title">Анализы</h4>
+                    <nav class="footer__list">
+                        <a href="#" class="footer__link">Каталог анализов</a>
+                        <a href="#" class="footer__link">Срочные анализы</a>
+                        <a href="#" class="footer__link">Щитовидная железа</a>
+                        <a href="#" class="footer__link">Репродуктивная функция</a>
+                        <a href="#" class="footer__link">Витамины</a>
+                        <a href="#" class="footer__link">Клещи и клещевые инфекции</a>
+                        <a href="#" class="footer__link">Прочие анализы</a>
+                        <a href="#" class="footer__link">Прочие анализы</a>
+                        <a href="#" class="footer__link">Прочие анализы</a>
+                        <a href="#" class="footer__link">Прочие анализы</a>
+                        <a href="#" class="footer__link">Прочие анализы</a>
+                    </nav>
+                </div>
+                <div class="footer__item">
+                    <h4 class="footer__title">О компании</h4>
+                    <nav class="footer__list">
+                        <a href="#" class="footer__link">Контакты</a>
+                        <a href="#" class="footer__link">Нормативные документы</a>
+                        <a href="#" class="footer__link">Контроль качества</a>
+                        <a href="#" class="footer__link">СМИ о нас</a>
+                        <a href="#" class="footer__link">Видео о КДЛ</a>
+                        <a href="#" class="footer__link">Вакансии</a>
+                        <a href="#" class="footer__link">Наши партнеры</a>
+                        <a href="#" class="footer__link">Технологии</a>
+                        <a href="#" class="footer__link">Оборудование</a>
+                        <a href="#" class="footer__link">Политика конфиденциальности</a>
+                    </nav>
+                </div>
+                <div class="footer__item">
+                    <h4 class="footer__title">Пациентам</h4>
+                    <nav class="footer__list">
+                        <a href="#" class="footer__link">Как узнать результат</a>
+                        <a href="#" class="footer__link">Правила подготовки</a>
+                        <a href="#" class="footer__link">Результат на ГосУслугах</a>
+                        <a href="#" class="footer__link">Сроки выполнения</a>
+                        <a href="#" class="footer__link">Вопросы и ответы</a>
+                        <a href="#" class="footer__link">Задать вопрос</a>
+                        <a href="#" class="footer__link">Справка для ФНС</a>
+                        <a href="#" class="footer__link">Страховые компании</a>
+                        <a href="#" class="footer__link">ДМС</a>
+                    </nav>
+                </div>
+                <div class="footer__item">
+                    <h4 class="footer__title">Информация</h4>
+                    <nav class="footer__list">
+                        <a href="#" class="footer__link">Акции</a>
+                        <a href="#" class="footer__link">Новости</a>
+                        <a href="#" class="footer__link">Статьи</a>
+                        <a href="#" class="footer__link">Оплата</a>
+                        <a href="#" class="footer__link">Оставить отзыв</a>
+                        <a href="#" class="footer__link">Скидки и дисконтные программы</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__down order-m-2">
+                <a href="#" class="develop">
+                    <span>Разработано</span>
+                    <svg>
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-diez"></use>
+                    </svg>
+                </a>
+                <button class="button mob-hidden">Выезд на дом</button>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="modal-content" id="video">
+    <iframe src="https://www.youtube.com/embed/XqZsoesa55w?si=q1haI5gkZgfglbsA"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+</div>
+
+<!-- Это временная секция, здесь ссылки на все страницы. На продакшене ее не будет -->
+<section class="section">
+    <div class="container">
+        <style>
+            .temp {
+                gap: 15px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .temp__link {
+                color: inherit;
+                font-family: 'Manrope', sans-serif;
+                font-size: 16px;
+                text-decoration: underline;
+            }
+
+            .temp__link:hover {
+                text-decoration: none;
+            }
+        </style>
+        <div class="temp">
+            <a href="./index.html" class="temp__link">Главная</a>
+            <a href="./stock.html" class="temp__link">Акции</a>
+            <a href="./stock-detail.html" class="temp__link">Акции деталка</a>
+            <a href="./analyses.html" class="temp__link">Анализы</a>
+            <a href="./analyses-detail.html" class="temp__link">Анализы деталка</a>
+            <a href="./departure.html" class="temp__link">Выезд на дом</a>
+            <a href="./patient.html" class="temp__link">Пациентам</a>
+            <a href="./rules.html" class="temp__link">Правила подготовки к анализам</a>
+            <a href="./gosuslugi.html" class="temp__link">Результаты на госуслугах</a>
+            <a href="./terms.html" class="temp__link">Сроки выполнения анализов</a>
+            <a href="./fns.html" class="temp__link">Справка для ФНС</a>
+            <a href="./payment.html" class="temp__link">Оплата</a>
+            <a href="./news.html" class="temp__link">Новости</a>
+            <a href="./news-detail.html" class="temp__link">Новости деталка</a>
+            <a href="./articles.html" class="temp__link">Статьи</a>
+            <a href="./dms.html" class="temp__link">ДМС</a>
+            <a href="./about.html" class="temp__link">О компании</a>
+            <a href="./clinics.html" class="temp__link">Клиники</a>
+            <a href="./docs.html" class="temp__link">Нормативные документы</a>
+            <a href="./quality-control.html" class="temp__link">Контроль качества</a>
+            <a href="./smi.html" class="temp__link">СМИ о Нас</a>
+            <a href="./vacancy.html" class="temp__link">Вакансии</a>
+            <a href="./technologies.html" class="temp__link">Технологии</a>
+            <a href="./equipment.html" class="temp__link">Оборудование</a>
+            <a href="./policy.html" class="temp__link">Политика конфиденциальности</a>
+            <a href="./clinics-detail.html" class="temp__link">Карточка центра</a>
+            <a href="./addresses.html" class="temp__link">Адреса</a>
+        </div>
+    </div>
+</section>
+
+<script defer src="js/bundle.js"></script></body>
+
+</html>

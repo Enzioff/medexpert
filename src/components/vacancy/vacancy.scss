@@ -1,0 +1,57 @@
+.vacancy {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 0 30px;
+    background: $light;
+    box-shadow: 0 4px 20px 0 rgba(130, 152, 158, 0.25);
+  }
+
+  &__content {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    transition: .2s lienar;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-of-type) {
+      border-bottom: 1px solid #E1E5EA;
+    }
+  }
+
+  &__item.active &__content {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+    padding-bottom: 24px;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 24px 0;
+    cursor: pointer;
+  }
+
+  &__icon {
+    display: flex;
+    width: 6px;
+    height: 6px;
+  }
+}

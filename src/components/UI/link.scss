@@ -1,0 +1,27 @@
+.link {
+  font-size: 16px;
+  font-weight: 300;
+  color: $primary-light;
+
+  &--big {
+    font-size: 18px;
+    font-weight: 400;
+    color: $primary;
+  }
+
+  &--dot {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    &::before {
+      content: '';
+      display: flex;
+      flex-shrink: 0;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $green-light;
+    }
+  }
+}

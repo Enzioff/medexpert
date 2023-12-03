@@ -1,0 +1,251 @@
+.editor {
+  display: block;
+  max-width: 770px;
+  width: 100%;
+
+  & > :last-child {
+    margin-bottom: 0;
+  }
+
+  &--16 {
+    font-size: rem(16);
+  }
+
+  &--18 {
+    font-size: rem(18);
+  }
+
+  &--center {
+    text-align: center;
+    @include r(1200) {
+      text-align: left;
+    }
+  }
+
+  h1 {
+    font-size: rem(50);
+    @include r(1200) {
+      font-size: rem(44);
+    }
+  }
+
+  h2 {
+    font-size: rem(44);
+    @include r(1200) {
+      font-size: rem(36);
+    }
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  // Используется
+  h4 {
+    font-size: rem(18);
+    font-weight: 500;
+  }
+
+  h5 {
+    font-size: rem(20);
+    @include r(1200) {
+      font-size: rem(16);
+    }
+  }
+
+  h6 {
+    font-size: rem(16);
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: normal;
+
+    @include r(1229) {
+      font-size: 14px;
+    }
+  }
+
+  b {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  ul,
+  ol {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 16px;
+    font-weight: 300;
+    @include r(1200) {
+      margin-bottom: rem(30);
+    }
+
+    & > :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  ul {
+    li {
+      position: relative;
+    }
+  }
+
+  ol {
+    li {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+
+      &::before {
+        content: '';
+        display: flex;
+        flex-shrink: 0;
+        width: 12px;
+        height: 12px;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNSAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yMS41MzAzIDUuNzE5NjdDMjEuODIzMiA2LjAxMjU2IDIxLjgyMzIgNi40ODc0NCAyMS41MzAzIDYuNzgwMzNMMTAuMDMwMyAxOC4yODAzQzkuODg3NjQgMTguNDIzIDkuNjkzNDYgMTguNTAyMiA5LjQ5MTY3IDE4LjVDOS4yODk4OCAxOC40OTc3IDkuMDk3NTEgMTguNDE0MiA4Ljk1ODAyIDE4LjI2ODRMMy40NTgwMiAxMi41MTg0QzMuMTcxNzEgMTIuMjE5MSAzLjE4MjI2IDExLjc0NDMgMy40ODE1OCAxMS40NThDMy43ODA5MSAxMS4xNzE3IDQuMjU1NjcgMTEuMTgyMyA0LjU0MTk4IDExLjQ4MTZMOS41MTE5MiAxNi42Nzc0TDIwLjQ2OTcgNS43MTk2N0MyMC43NjI2IDUuNDI2NzggMjEuMjM3NCA1LjQyNjc4IDIxLjUzMDMgNS43MTk2N1oiIGZpbGw9IiMwMDdBOEYiLz4KPC9zdmc+Cg==);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+
+  ul {
+    li {
+      display: flex;
+      align-items: center;
+      padding-left: 14px;
+      gap: 14px;
+
+      &::before {
+        content: '';
+        display: flex;
+        flex-shrink: 0;
+        width: 2px;
+        height: 2px;
+        border-radius: 50%;
+        background-color: $primary;
+      }
+    }
+  }
+
+  blockquote {
+    font-weight: 300;
+    position: relative;
+    font-size: rem(24);
+    margin-bottom: 2rem;
+    padding: rem(33) rem(72);
+    @include r(1200) {
+      font-weight: 400;
+      font-size: rem(20);
+      margin-left: rem(-15);
+      margin-right: rem(-15);
+      margin-bottom: rem(30);
+      padding: rem(30) rem(30) rem(30) rem(42);
+    }
+
+    &:before {
+      content: "";
+      top: rem(33);
+      left: rem(50);
+      width: rem(2);
+      display: block;
+      bottom: rem(33);
+      position: absolute;
+      @include r(1200) {
+        left: rem(30);
+        top: rem(30);
+        bottom: rem(30);
+      }
+    }
+  }
+
+  figure {
+    display: block;
+    margin-bottom: 2rem;
+    @include r(1200) {
+      margin-bottom: rem(30);
+    }
+  }
+
+  picture {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    background: #F2F4F6;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  figcaption {
+    display: block;
+    font-weight: 400;
+  }
+
+  strong,
+  b {
+    font-weight: 600;
+  }
+
+  i {
+    font-style: italic;
+  }
+
+  a {
+    color: $primary-light;
+  }
+
+  &--default {
+    max-width: 770px;
+    font-size: 18px;
+
+    ol {
+      gap: 5px;
+
+      li {
+        display: list-item;
+        list-style: decimal inside;
+
+        &::before {
+          display: none;
+        }
+      }
+    }
+
+    ul {
+      padding-left: 0;
+
+      li {
+        padding-left: 0;
+        gap: 30px;
+
+        &::before {
+          width: 16px;
+          height: 16px;
+          background-color: $primary-light;
+        }
+      }
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  &--full {
+    max-width: none;
+  }
+}

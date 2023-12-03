@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body">
+
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+    <section class="section section--top">
+        <div class="container">
+            <div class="main-search">
+                <form action="#" class="main-search__form">
+                    <svg class="main-search__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
+                    </svg>
+                    <input type="text" class="input" placeholder="Поиск по сайту">
+                    <button class="main-search__button button button--search">Найти</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="section section--gray">
+        <div class="container">
+            <div class="intro intro--main">
+                <div class="intro__info">
+                    <h1 class="main-title">Лабораторные исследования</h1>
+                    <p class="intro__text intro__text--fixed-size">
+                        В консультативно-диагностическом медицинском центре предусмотрено все необходимое
+                        для проведения современных высокоточных медицинских диагностических исследований.
+                    </p>
+                </div>
+                <picture class="intro__picture intro__picture--blackout">
+                    <img src="./assets/images/intro-doctor.png" alt="">
+                </picture>
+            </div>
+        </div>
+    </section>
+    <section class="section pt-40 pb-100">
+        <div class="container">
+            <h2 class="main-title mb-20">О нашей лаборатории</h2>
+            <p class="text w-770">
+                В консультативно-диагностическом медицинском центре предусмотрено все необходимое для проведения
+                современных высокоточных медицинских диагностических исследований.В консультативно-диагностическом
+                медицинском центре предусмотрено все необходимое для проведения современных высокоточных медицинских
+                диагностических исследований.
+            </p>
+        </div>
+    </section>
+    <section class="section pb-100">
+        <div class="container">
+            <div class="stocks">
+                <h3 class="title">Акции</h3>
+                <div class="slider">
+                    <div class="slider__wrapper" data-slider="default">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <article class="article-stock" style="background-image: url('./assets/images/article-photo.png')">
+                                    <div class="article-stock__info">
+                                        <h3 class="article-stock__title">Экономим по выходным!</h3>
+                                        <p class="article-stock__text">Комплексные лабораторные<br>исследования</p>
+                                        <p class="article-stock__text">со скидкой до 50%</p>
+                                        <a href="#" class="article-stock__show-more show-more">
+                                            <span>Читать</span>
+                                            <button class="button-arrow">
+                                                <svg class="button-arrow__icon">
+                                                    <use xlink:href="./assets/sprite/sprite.svg#icon-arrow"></use>
+                                                </svg>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="article-stock" style="background-image: url('./assets/images/article-photo.png')">
+                                    <div class="article-stock__info">
+                                        <h3 class="article-stock__title">Выгодная и удобная<br> диагностика за 1 день!</h3>
+                                        <p class="article-stock__text">диагностические пакеты</p>
+                                        <a href="#" class="article-stock__show-more show-more">
+                                            <span>Читать</span>
+                                            <button class="button-arrow">
+                                                <svg class="button-arrow__icon">
+                                                    <use xlink:href="./assets/sprite/sprite.svg#icon-arrow"></use>
+                                                </svg>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="article-stock" style="background-image: url('./assets/images/article-photo.png')">
+                                    <div class="article-stock__info">
+                                        <h3 class="article-stock__title">Выгодная и удобная<br> диагностика за 1 день!</h3>
+                                        <p class="article-stock__text">диагностические пакеты</p>
+                                        <a href="#" class="article-stock__show-more show-more">
+                                            <span>Читать</span>
+                                            <button class="button-arrow">
+                                                <svg class="button-arrow__icon">
+                                                    <use xlink:href="./assets/sprite/sprite.svg#icon-arrow"></use>
+                                                </svg>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="article-stock" style="background-image: url('./assets/images/article-photo.png')">
+                                    <div class="article-stock__info">
+                                        <h3 class="article-stock__title">Выгодная и удобная<br> диагностика за 1 день!</h3>
+                                        <p class="article-stock__text">диагностические пакеты</p>
+                                        <a href="#" class="article-stock__show-more show-more">
+                                            <span>Читать</span>
+                                            <button class="button-arrow">
+                                                <svg class="button-arrow__icon">
+                                                    <use xlink:href="./assets/sprite/sprite.svg#icon-arrow"></use>
+                                                </svg>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="slider__button slider__button--prev">
+                            <svg>
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-pointer"></use>
+                            </svg>
+                        </div>
+                        <div class="slider__button slider__button--next">
+                            <svg>
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-pointer"></use>
+                            </svg>
+                        </div>
+                        <div class="slider__pagination"></div>
+                    </div>
+                </div>
+                <button class="button centered button--auto">
+                    <svg class="button__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-book-stars"></use>
+                    </svg>
+                    Все акции
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="section pb-100">
+        <div class="container">
+            <div class="services">
+                <h3 class="title">Предоставляемые услуги</h3>
+                <div class="services__grid">
+                    <a href="#" class="services__item">
+                        <h4 class="services__title">Репродуктивная функция</h4>
+                    </a>
+                    <a href="#" class="services__item">
+                        <h4 class="services__title">Репродуктивная функция</h4>
+                    </a>
+                    <a href="#" class="services__item services__item--big">
+                        <h4 class="services__title">Репродуктивная функция</h4>
+                    </a>
+                    <a href="#" class="services__item services__item--big">
+                        <h4 class="services__title">Репродуктивная функция</h4>
+                    </a>
+                    <a href="#" class="services__item">
+                        <h4 class="services__title">Репродуктивная функция</h4>
+                    </a>
+                    <a href="#" class="services__item">
+                        <h4 class="services__title">Репродуктивная функция</h4>
+                    </a>
+                    <a href="#" class="services__item">
+                        <h4 class="services__title">Репродуктивная функция</h4>
+                    </a>
+                    <a href="#" class="services__item">
+                        <h4 class="services__title">Репродуктивная функция</h4>
+                    </a>
+                    <a href="#" class="services__item services__item--big">
+                        <h4 class="services__title">Репродуктивная функция</h4>
+                    </a>
+                </div>
+                <p class="services__question centered">Не нашли нужный анализ?</p>
+                <div class="info">
+                    <div class="info__content">
+                        <h4 class="title">Каталог анализов</h4>
+                        <p class="info__text">Вы можете перейти в каталог и посмотреть интересующие вас услуги</p>
+                        <button class="button">Перейти</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="faq">
+                <h3 class="title mb-30">Часто задаваемые вопросы</h3>
+                <div class="faq__list mb-50">
+                    <div class="accordion" data-accordion>
+                        <div class="accordion__top">
+                            Как узнать результаты анализа?
+                            <svg class="accordion__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-slim"></use>
+                            </svg>
+                        </div>
+                        <div class="accordion__content">
+                            <p class="accordion__text">
+                                Перед проведением вакцины от ковидной инфекции, осуществляется превакцинальный осмотр
+                                врачом, измеряется АД, температура тела по результату осмотра пациент допускается или не
+                                допускается на вакцинацию.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion" data-accordion>
+                        <div class="accordion__top">
+                            Как осуществляется проверка состояния здоровья перед вакцинацией?
+                            <svg class="accordion__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-slim"></use>
+                            </svg>
+                        </div>
+                        <div class="accordion__content">
+                            <p class="accordion__text">
+                                Перед проведением вакцины от ковидной инфекции, осуществляется превакцинальный осмотр
+                                врачом, измеряется АД, температура тела по результату осмотра пациент допускается или не
+                                допускается на вакцинацию.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion" data-accordion>
+                        <div class="accordion__top">
+                            Сроки выполнения анализов
+                            <svg class="accordion__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-slim"></use>
+                            </svg>
+                        </div>
+                        <div class="accordion__content">
+                            <p class="accordion__text">
+                                Перед проведением вакцины от ковидной инфекции, осуществляется превакцинальный осмотр
+                                врачом, измеряется АД, температура тела по результату осмотра пациент допускается или не
+                                допускается на вакцинацию.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion" data-accordion>
+                        <div class="accordion__top">
+                            Какие правила подготовки к анализам?
+                            <svg class="accordion__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-slim"></use>
+                            </svg>
+                        </div>
+                        <div class="accordion__content">
+                            <p class="accordion__text">
+                                Перед проведением вакцины от ковидной инфекции, осуществляется превакцинальный осмотр
+                                врачом, измеряется АД, температура тела по результату осмотра пациент допускается или не
+                                допускается на вакцинацию.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section pb-100">
+        <div class="container">
+            <div class="feedback">
+                <div class="feedback__header">
+                    <h3 class="feedback__title">Остались вопросы?</h3>
+                    <p class="feedback__text">
+                        Укажите свой номер телефона. Мы свяжемся с вами в ближайшее время.
+                    </p>
+                </div>
+                <form action="#" class="form" data-form>
+                    <label class="form__item">
+                        <span class="form__input">
+                            <svg class="form__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-phone"></use>
+                            </svg>
+                            <input type="text" class="input" placeholder="+7 ( ___ ) ___-__-__">
+                        </span>
+                        <button class="form__button button" type="submit">Отправить</button>
+                    </label>
+                    <label class="form__item form__item--accept" data-accept-form>
+                        <input type="checkbox" class="check" data-accept>
+                        <span>Нажимая кнопку отправить вы соглашаетесь с Политикой обработки персональных данных</span>
+                    </label>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<%= htmlWebpackPlugin.options.sectionFooter %>
+
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+
+</html>

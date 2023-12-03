@@ -1,0 +1,53 @@
+.answer {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 30px;
+  gap: 20px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 25px 0;
+  }
+
+  &__item {
+    &:not(:last-of-type) {
+      border-bottom: 1px solid $dark;
+    }
+  }
+  &__title {
+    font-size: 20px;
+    font-weight: 400;
+    @include r(1200) {
+      font-size: 18px;
+    }
+  }
+  &__toolbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    @include r(1200) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 40px;
+    }
+  }
+  &__content {
+    height: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+    transition: .2s linear;
+  }
+  &__item.active &__content {
+    padding-bottom: 25px;
+    height: auto;
+  }
+}

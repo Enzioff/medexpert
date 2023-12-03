@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body">
+
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+    <section class="section mb-40">
+        <div class="container">
+            <div class="main-search main-search--dark">
+                <form action="#" class="main-search__form">
+                    <svg class="main-search__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
+                    </svg>
+                    <input type="text" class="input" placeholder="Поиск по сайту">
+                    <button class="main-search__button button button--search">Найти</button>
+                </form>
+            </div>
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <span class="breadcrumbs__link">Акции</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section pb-100">
+        <div class="container">
+            <h1 class="main-title mb-40">СМИ о нас</h1>
+            <div class="grid-cards grid-cards--equalize mb-30">
+                <a href="#" class="article-news" style="background-image: url('./assets/images/icon-no-photo.svg')">
+                    <h2 class="article-news__title">Какие анализы сдать, если вы чувствуете себя как выжатый лимон</h2>
+                    <time class="article-news__time">03.03.2023</time>
+                    <p class="article-news__text">Одно дело, если у человека нет сил после того, как он ударно потрудился...</p>
+                </a>
+                <a href="#" class="article-news" style="background-image: url('./assets/images/icon-no-photo.svg')">
+                    <h2 class="article-news__title">Какие анализы сдать, если вы чувствуете себя как выжатый лимон</h2>
+                    <time class="article-news__time">03.03.2023</time>
+                    <p class="article-news__text">Одно дело, если у человека нет сил после того, как он ударно потрудился...</p>
+                </a>
+                <a href="#" class="article-news" style="background-image: url('./assets/images/icon-no-photo.svg')">
+                    <h2 class="article-news__title">Какие анализы сдать, если вы чувствуете себя как выжатый лимон</h2>
+                    <time class="article-news__time">03.03.2023</time>
+                    <p class="article-news__text">Одно дело, если у человека нет сил после того, как он ударно потрудился...</p>
+                </a>
+                <a href="#" class="article-news" style="background-image: url('./assets/images/icon-no-photo.svg')">
+                    <h2 class="article-news__title">Какие анализы сдать, если вы чувствуете себя как выжатый лимон</h2>
+                    <time class="article-news__time">03.03.2023</time>
+                    <p class="article-news__text">Одно дело, если у человека нет сил после того, как он ударно потрудился...</p>
+                </a>
+                <a href="#" class="article-news" style="background-image: url('./assets/images/icon-no-photo.svg')">
+                    <h2 class="article-news__title">Какие анализы сдать, если вы чувствуете себя как выжатый лимон</h2>
+                    <time class="article-news__time">03.03.2023</time>
+                    <p class="article-news__text">Одно дело, если у человека нет сил после того, как он ударно потрудился...</p>
+                </a>
+                <a href="#" class="article-news" style="background-image: url('./assets/images/icon-no-photo.svg')">
+                    <h2 class="article-news__title">Какие анализы сдать, если вы чувствуете себя как выжатый лимон</h2>
+                    <time class="article-news__time">03.03.2023</time>
+                    <p class="article-news__text">Одно дело, если у человека нет сил после того, как он ударно потрудился...</p>
+                </a>
+            </div>
+            <button class="button button--auto centered w-240">Показать еще</button>
+        </div>
+    </section>
+</main>
+
+<%= htmlWebpackPlugin.options.sectionFooter %>
+
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+
+</html>

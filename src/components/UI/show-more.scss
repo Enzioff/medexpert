@@ -1,0 +1,14 @@
+.show-more {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: $primary-light;
+
+  &--dark {
+    color: $primary;
+  }
+}

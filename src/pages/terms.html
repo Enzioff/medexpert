@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body">
+
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+    <section class="section section--top">
+        <div class="container">
+            <div class="main-search">
+                <form action="#" class="main-search__form">
+                    <svg class="main-search__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
+                    </svg>
+                    <input type="text" class="input" placeholder="Поиск по сайту">
+                    <button class="main-search__button button button--search">Найти</button>
+                </form>
+            </div>
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <span class="breadcrumbs__link">Акции</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section section--gray">
+        <div class="container">
+            <div class="intro intro--main">
+                <div class="intro__info">
+                    <h1 class="main-title">Сроки выполнения<br>анализов</h1>
+                    <p class="intro__text intro__text--fixed-size">
+                        Большинство рутинных исследований выполняется в автоматическом режиме на специальных приборах —
+                        анализаторах. В зависимости от исследования время, в течение которого прибор выдает результат,
+                        составляет от 1 минуты до 1 часа.
+                    </p>
+                </div>
+                <picture class="intro__picture intro__picture--blackout">
+                    <img src="./assets/images/intro-doctor.png" alt="">
+                </picture>
+            </div>
+        </div>
+    </section>
+    <section class="section pt-60 pb-100">
+        <div class="container">
+            <div class="editor editor--default mb-40">
+                <h3>Общая информация:</h3>
+                <br>
+                <p>
+                    Ритм жизни современного города диктует нам свои условия. Каждый мечтает прожить наступающий день,
+                    успев максимум, не потеряв ни минуты. Наша компания поможет Вам оставаться в этом быстротечном ритме
+                    мегаполиса.
+                    Большинство рутинных исследований выполняется в автоматическом режиме на специальных приборах —
+                    анализаторах. В зависимости от исследования время, в течение которого прибор выдает результат,
+                    составляет от 1 минуты до 1 часа. Именно поэтому наша Лаборатория выполняет большинство тестов в
+                    течение 1 рабочего дня. Однако некоторые исследования мы проводим в течение 2-6 дней или более.
+                    Почему это происходит?
+                </p>
+                <br>
+                <ul>
+                    <li>
+                        Когда вы приходите в медицинский центр Медэксперт сдавать анализы, то ваш биоматериал (например,
+                        кровь) исследуется не на месте, а отправляется в подготовленном виде в специальных контейнерах с
+                        температурным режимом в один из наших лабораторных комплексов. Курьерская служба каждый день
+                        старается в максимально сжатые сроки доставлять биоматериал в Лабораторию, для этого мы
+                        используем как автомобильную, так и авиадоставку и их комбинации.
+                    </li>
+                    <li>
+                        В лабораторной диагностике существует множество методик, которые используют при выполнении того
+                        или иного вида исследования. Например, метод бактериологического посева позволяет выполнять
+                        исследования в течение 2-6 дней. Такие сроки обусловлены тем, что данный метод представляет
+                        собой исследование, при котором биоматериал, с вероятно находящимися в нем патогенными
+                        микроорганизмами, помещают в благоприятную для их размножения среду при определенных
+                        температурных режимах. Затем в течение нескольких дней (сроки зависят от определяемого
+                        возбудителя) происходит рост микроорганизмов в виде так называемых колоний. Поэтому для
+                        выполнения данного теста необходимы более длительные сроки, чем 1 рабочий день.
+                    </li>
+                </ul>
+            </div>
+            <div class="columns">
+                <div class="columns__col columns__col--6">
+                    <article class="article-relevant" style="background: #E0ECF9">
+                        <picture class="article-relevant__picture">
+                            <img
+                                src="https://catherineasquithgallery.com/uploads/posts/2021-02/1614282221_80-p-chernii-fon-laika-98.jpg"
+                                alt="">
+                        </picture>
+                        <div class="article-relevant__info">
+                            <p class="article-relevant__text">
+                                Медэксперт — социально ориентированная компания. Мы хотим, чтобы возможности медицины
+                                будущего были доступны как можно большему количеству людей в самых разных регионах
+                                России. В тех случаях, когда определённые тесты не обладают большой клинической
+                                востребованностью, мы в течение дня стараемся собрать максимально большое количество
+                                биоматериала, чтобы оптимизировать затраты на реагенты и работу анализаторов. В каком-то
+                                смысле нам приходится «жертвовать» сроками выполнения анализов, но данные шаги
+                                оказываются экономически и социально оправданными, так как в конечном итоге мы имеем
+                                возможность максимально снизить конечную стоимость исследования.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="columns__col columns__col--6">
+                    <article class="article-relevant" style="background: #D4F4D9">
+                        <picture class="article-relevant__picture">
+                            <img
+                                src="https://catherineasquithgallery.com/uploads/posts/2021-02/1614282221_80-p-chernii-fon-laika-98.jpg"
+                                alt="">
+                        </picture>
+                        <div class="article-relevant__info">
+                            <p class="article-relevant__text">
+                                Для выполнения некоторых сложных и редких анализов наша Лаборатория обращается за
+                                помощью к лучшим, узкоспециализированным и профильным организациям на рынке
+                                лабораторно-диагностических услуг. Это позволяет нам добиться максимально точных
+                                результатов, но увеличивает время выполнения исследования.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section pb-100">
+        <div class="container">
+            <div class="editor editor--default mb-40">
+                <h3>Результаты анализов</h3>
+                <p>
+                    Вариант получения готовых результатов анализов также оказывает свое влияние на конечный срок.
+                    Наиболее быстрый способ получить информацию о результате пройденного исследования - проверить
+                    готовность анализа через наш сайт. Все данные о Вас и необходимом обследовании хранятся в
+                    специальной Лабораторной Информационной Системе, которая связана со всеми филиалами нашей
+                    Лаборатории. Как только результаты Вашего теста готовы, они появляются на нашем сайте, где Вы
+                    самостоятельно можете их просмотреть. Если же Вы желаете получить классический бумажный вариант, Вам
+                    необходимо обратиться в медицинский центр, где сдавался анализ.
+                </p>
+            </div>
+            <div class="grid-services mb-30">
+                <article class="article-card">
+                    <svg class="article-card__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-mail"></use>
+                    </svg>
+                    <h3 class="article-card__title">E-mail</h3>
+                    <p class="article-card__text">
+                        Сообщите адрес электронной почты менеджеру или укажите его в форме заказа.
+                    </p>
+                    <p class="article-card__text">
+                        Результаты лабораторных тестов будут отправлены сразу после выполнения
+                    </p>
+                </article>
+                <article class="article-card">
+                    <svg class="article-card__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-mail"></use>
+                    </svg>
+                    <h3 class="article-card__title">E-mail</h3>
+                    <p class="article-card__text">
+                        Сообщите адрес электронной почты менеджеру или укажите его в форме заказа.
+                    </p>
+                    <p class="article-card__text">
+                        Результаты лабораторных тестов будут отправлены сразу после выполнения
+                    </p>
+                </article>
+                <article class="article-card">
+                    <svg class="article-card__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-mail"></use>
+                    </svg>
+                    <h3 class="article-card__title">E-mail</h3>
+                    <p class="article-card__text">
+                        Сообщите адрес электронной почты менеджеру или укажите его в форме заказа.
+                    </p>
+                    <p class="article-card__text">
+                        Результаты лабораторных тестов будут отправлены сразу после выполнения
+                    </p>
+                </article>
+                <article class="article-card">
+                    <svg class="article-card__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-mail"></use>
+                    </svg>
+                    <h3 class="article-card__title">E-mail</h3>
+                    <p class="article-card__text">
+                        Сообщите адрес электронной почты менеджеру или укажите его в форме заказа.
+                    </p>
+                    <p class="article-card__text">
+                        Результаты лабораторных тестов будут отправлены сразу после выполнения
+                    </p>
+                </article>
+                <article class="article-card article-card--dark">
+                    <svg class="article-card__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-mail"></use>
+                    </svg>
+                    <h3 class="article-card__title">
+                        Расшифровку результатов сделаем бесплатно!
+                    </h3>
+                </article>
+                <article class="article-question grid-services__big-item">
+                    <div class="article-question__info">
+                        <h3 class="article-question__title">Спасибо доктор!</h3>
+                        <p class="article-question__text">
+                            Эксперт лабораторной диагностики проконсультирует вас по результатам анализов,
+                            порекомендует
+                            дальнейшее обследование или направит к узкому специалисту.
+                        </p>
+                        <button class="button w-240 mt-a">Задать вопрос доктору</button>
+                    </div>
+                    <picture class="article-question__picture">
+                        <img src="./assets/images/doctor.png" alt="">
+                    </picture>
+                </article>
+            </div>
+            <article class="article-question article-question--catalog">
+                <div class="article-question__info">
+                    <p class="article-question__title w-520">
+                        Мы строим открытую компанию и работаем для Вас — наших клиентов. Ведь именно для Вас создавалась
+                        наша Лаборатория. В соответствии с вашими запросами, потребностями и ожиданиями, она
+                        развивается.
+                    </p>
+                    <button class="button w-240 mt-a">В каталог</button>
+                </div>
+                <picture class="article-question__picture">
+                    <img src="./assets/images/doctor-2.png" alt="">
+                </picture>
+            </article>
+        </div>
+    </section>
+</main>
+
+<%= htmlWebpackPlugin.options.sectionFooter %>
+
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+.top-header {
+  position: relative;
+  padding: 12px 0;
+  background-color: $gray;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body">
+
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+    <section class="section section--top">
+        <div class="container">
+            <div class="main-search">
+                <form action="#" class="main-search__form">
+                    <svg class="main-search__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
+                    </svg>
+                    <input type="text" class="input" placeholder="Поиск по сайту">
+                    <button class="main-search__button button button--search">Найти</button>
+                </form>
+            </div>
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <span class="breadcrumbs__link">Акции</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section section--gray">
+        <div class="container">
+            <div class="intro">
+                <div class="intro__info">
+                    <h1 class="main-title">О компании</h1>
+                    <p class="intro__text intro__text--fixed-size">Здоровье и семья – общечеловеческие ценности, ставшие
+                        основой для создания сети семейных клиник Медэксперт.Мы всегда готовы сделать всё необходимое
+                        для здоровья ваших родных и близких!</p>
+                </div>
+                <picture class="intro__picture">
+                    <img src="./assets/images/intro-heart.png" alt="">
+                </picture>
+            </div>
+        </div>
+    </section>
+    <section class="section pt-60 pb-30">
+        <div class="container">
+            <div class="columns mb-50">
+                <div class="columns__col columns__col--4">
+                    <a href="#" class="article-type article-type--detail">
+                        <picture class="article-type__picture">
+                            <img src="./assets/images/icon-no-photo.svg" alt="">
+                        </picture>
+                        <div class="article-type__info">
+                            <h4 class="article-type__title">14 клиник</h4>
+                            <p class="article-type__text">по Калининграду и области</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="columns__col columns__col--4">
+                    <a href="#" class="article-type article-type--detail">
+                        <picture class="article-type__picture">
+                            <img src="./assets/images/icon-no-photo.svg" alt="">
+                        </picture>
+                        <div class="article-type__info">
+                            <h4 class="article-type__title">2 500 врачей</h4>
+                            <p class="article-type__text">работают в “Медэксперте”</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="columns__col columns__col--4">
+                    <a href="#" class="article-type article-type--detail">
+                        <picture class="article-type__picture">
+                            <img src="./assets/images/icon-no-photo.svg" alt="">
+                        </picture>
+                        <div class="article-type__info">
+                            <h4 class="article-type__title">2000 видов</h4>
+                            <p class="article-type__text">различных исследований</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="video mb-60">
+                <picture class="video__picture">
+                    <img src="./assets/images/video.png" alt="">
+                </picture>
+                <button class="video__button">
+                    <svg>
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-play"></use>
+                    </svg>
+                </button>
+            </div>
+            <p class="text mb-30">
+                Повседневная практика показывает, что реализация намеченных плановых заданий влечет за собой процесс
+                внедрения и модернизации систем массового участия. Разнообразный и богатый опыт новая модель
+                организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании модели
+                развития. Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности позволяет оценить
+                значение соответствующий условий активизации. С другой стороны укрепление и развитие структуры требуют
+                определения и уточнения систем массового участия
+            </p>
+            <p class="text mb-30">
+                Повседневная практика показывает, что реализация намеченных плановых заданий влечет за собой процесс
+                внедрения и модернизации систем массового участия. Разнообразный и богатый опыт новая модель
+                организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании модели
+                развития. Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности позволяет оценить
+                значение соответствующий условий активизации. С другой стороны укрепление и развитие структуры требуют
+                определения и уточнения систем массового участия
+            </p>
+            <p class="text">
+                Повседневная практика показывает, что реализация намеченных плановых заданий влечет за собой процесс
+                внедрения и модернизации систем массового участия. Разнообразный и богатый опыт новая модель
+                организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании модели
+                развития. Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности позволяет оценить
+                значение соответствующий условий активизации. С другой стороны укрепление и развитие структуры требуют
+                определения и уточнения систем массового участия
+            </p>
+        </div>
+    </section>
+    <section class="section pb-100">
+        <div class="container">
+            <div class="head mb-70">
+                <h2 class="title">Мы заботимся о пациентах, меняя их жизнь к лучшему!</h2>
+            </div>
+            <div class="slider">
+                <div class="slider__wrapper" data-slider="extended">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="article-photo">
+                                <picture class="article-photo__picture">
+                                    <img src="https://w.forfun.com/fetch/1f/1ff02e3ba9cecf53fa276611f21c6881.jpeg" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="article-photo">
+                                <picture class="article-photo__picture">
+                                    <img src="https://w.forfun.com/fetch/1f/1ff02e3ba9cecf53fa276611f21c6881.jpeg" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="article-photo">
+                            <picture class="article-photo__picture">
+                                <img src="https://fikiwiki.com/uploads/posts/2022-02/1645030242_33-fikiwiki-com-p-kartinki-krasivie-vertikalnie-35.jpg" alt="">
+                            </picture>
+                        </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="article-photo">
+                                <picture class="article-photo__picture">
+                                    <img src="https://w.forfun.com/fetch/1f/1ff02e3ba9cecf53fa276611f21c6881.jpeg" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__button slider__button--prev">
+                        <svg>
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-pointer"></use>
+                        </svg>
+                    </div>
+                    <div class="slider__button slider__button--next">
+                        <svg>
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-pointer"></use>
+                        </svg>
+                    </div>
+                    <div class="slider__pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section--gray pt-80 pb-80 mb-100">
+        <div class="container">
+            <h2 class="title mb-50">Наши партнеры:</h2>
+            <div class="partners">
+                <div class="partners__item">
+                    <picture class="partners__picture">
+                        <img src="./assets/images/soglasie.png" alt="">
+                    </picture>
+                </div>
+                <div class="partners__item">
+                    <picture class="partners__picture">
+                        <img src="./assets/images/max.png" alt="">
+                    </picture>
+                </div>
+                <div class="partners__item">
+                    <picture class="partners__picture">
+                        <img src="./assets/images/max.png" alt="">
+                    </picture>
+                </div>
+                <div class="partners__item">
+                    <picture class="partners__picture">
+                        <img src="./assets/images/soglasie.png" alt="">
+                    </picture>
+                </div>
+                <div class="partners__item">
+                    <picture class="partners__picture">
+                        <img src="./assets/images/soglasie.png" alt="">
+                    </picture>
+                </div>
+                <div class="partners__item">
+                    <picture class="partners__picture">
+                        <img src="./assets/images/soglasie.png" alt="">
+                    </picture>
+                </div>
+                <div class="partners__item">
+                    <picture class="partners__picture">
+                        <img src="./assets/images/soglasie.png" alt="">
+                    </picture>
+                </div>
+                <div class="partners__item">
+                    <picture class="partners__picture">
+                        <img src="./assets/images/soglasie.png" alt="">
+                    </picture>
+                </div>
+                <div class="partners__item">
+                    <picture class="partners__picture">
+                        <img src="./assets/images/soglasie.png" alt="">
+                    </picture>
+                </div>
+                <div class="partners__item">
+                    <picture class="partners__picture">
+                        <img src="./assets/images/soglasie.png" alt="">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<%= htmlWebpackPlugin.options.sectionFooter %>
+
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+
+</html>

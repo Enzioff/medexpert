@@ -1,0 +1,30 @@
+.emergency {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 18px;
+  gap: 10px;
+  padding: 31px 36px;
+  border-radius: 10px;
+  background: $gray;
+  height: 100%;
+
+  &__title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 110%;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 287px;
+  }
+
+  &__phone {
+    font-size: 24px;
+    font-weight: 600;
+    color: $primary-light;
+  }
+}

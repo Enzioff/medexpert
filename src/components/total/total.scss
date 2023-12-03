@@ -1,0 +1,70 @@
+.total {
+  position: sticky;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  height: auto;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: $gray;
+    border-radius: 10px;
+  }
+
+  &__head {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $gray-dark;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__price {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    color: $primary;
+  }
+
+  &__term {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: $gray-dark;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    svg {
+      display: flex;
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $gray-dark;
+  }
+}

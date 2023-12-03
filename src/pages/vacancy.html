@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body">
+
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+    <section class="section section--top">
+        <div class="container">
+            <div class="main-search">
+                <form action="#" class="main-search__form">
+                    <svg class="main-search__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
+                    </svg>
+                    <input type="text" class="input" placeholder="Поиск по сайту">
+                    <button class="main-search__button button button--search">Найти</button>
+                </form>
+            </div>
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <span class="breadcrumbs__link">Акции</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section section--gray">
+        <div class="container">
+            <div class="intro intro--big">
+                <div class="intro__info">
+                    <h1 class="main-title">
+                        Присоединяйтесь<br>
+                        к нашей команде!
+                    </h1>
+                    <p class="intro__text">
+                        Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское
+                        обеспечение нашей деятельности позволяет выполнять важные задания по разработке дальнейших
+                        направлений развития. Идейные соображения высшего порядка,
+                    </p>
+                    <button class="button">Откликнуться</button>
+                </div>
+                <picture class="intro__picture intro__picture--blackout">
+                    <img src="./assets/images/intro-doctor.png" alt="">
+                </picture>
+            </div>
+        </div>
+    </section>
+    <section class="section pt-80 pb-80">
+        <div class="container">
+            <div class="head mb-60">
+                <h2 class="title">
+                    Мы внимательны к тому, что важно, и предлагаем:
+                </h2>
+            </div>
+            <div class="columns">
+                <div class="columns__col columns__col--4">
+                    <a href="#" class="article-type">
+                        <picture class="article-type__picture">
+                            <img src="./assets/images/icon-no-photo.svg" alt="">
+                        </picture>
+                        <div class="article-type__info">
+                            <h4 class="article-type__title">Удобство взаимодействия
+                                с пациентами</h4>
+                            <p class="article-type__text">Используем современные цифровые решения для комфортной
+                                работы</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="columns__col columns__col--4">
+                    <a href="#" class="article-type">
+                        <picture class="article-type__picture">
+                            <img src="./assets/images/icon-no-photo.svg" alt="">
+                        </picture>
+                        <div class="article-type__info">
+                            <h4 class="article-type__title">Официальное
+                                оформление</h4>
+                            <p class="article-type__text">Трудоустройство по ТК РФ с соблюдением всех социальных
+                                гарантий и требований по охране труда.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="columns__col columns__col--4">
+                    <a href="#" class="article-type">
+                        <picture class="article-type__picture">
+                            <img src="./assets/images/icon-no-photo.svg" alt="">
+                        </picture>
+                        <div class="article-type__info">
+                            <h4 class="article-type__title">Современное оснащение клиник</h4>
+                            <p class="article-type__text">От комфортного рабочего места до сложного экспертного
+                                медицинского оборудования.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section pb-100">
+        <div class="container">
+            <div class="vacancy">
+                <div class="vacancy__block">
+                    <h2 class="title mb-50">Врачи</h2>
+                    <div class="vacancy__wrapper">
+                        <div class="vacancy__item" data-accordion>
+                            <div class="vacancy__top">
+                                <h3 class="vacancy__title">Врач ультразвуковой диагностики</h3>
+                                <svg class="vacancy__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-slim"></use>
+                                </svg>
+                            </div>
+                            <div class="vacancy__content">
+                                <div class="editor">
+                                    <p>
+                                        Локация:<br>
+                                        открыты вакансии в нескольких районах города Санкт-Петербург<br>
+                                        <br>
+                                        Обязанности:<br>
+                                        - Оказывать квалифицированную помощь пациентам гинекологического профиля;<br>
+                                        - Определять необходимость в дополнительных методах исследований<br>
+                                        - Определять тактики ведения больного в соответствии с установленными правилами и стандартами;<br>
+                                        - Ведение беременности.<br>
+                                        <br>
+                                        Требования:<br>
+                                        - Мы ищем грамотного специалиста с аналогичным опытом работы от 3-х лет;<br>
+                                        - Обязательно наличие всех документов для осуществления медицинской деятельности согласно действующего законодательства (Акушерство-гинекология и УЗИ).<br>
+                                        <br>
+                                        Основные условия:<br>
+                                        - Стабильная заработная плата (оклад + процент от приема);-<br>
+                                        <br>
+                                        График работы: сменный (обсуждается с каждым специалистом индивидуально);<br>
+                                        - Мы заботимся о вашем медицинском стаже
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vacancy__item" data-accordion>
+                            <div class="vacancy__top">
+                                <h3 class="vacancy__title">Врач ультразвуковой диагностики</h3>
+                                <svg class="vacancy__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-slim"></use>
+                                </svg>
+                            </div>
+                            <div class="vacancy__content">
+                                <div class="editor">
+                                    <p>
+                                        Локация:<br>
+                                        открыты вакансии в нескольких районах города Санкт-Петербург<br>
+                                        <br>
+                                        Обязанности:<br>
+                                        - Оказывать квалифицированную помощь пациентам гинекологического профиля;<br>
+                                        - Определять необходимость в дополнительных методах исследований<br>
+                                        - Определять тактики ведения больного в соответствии с установленными правилами и стандартами;<br>
+                                        - Ведение беременности.<br>
+                                        <br>
+                                        Требования:<br>
+                                        - Мы ищем грамотного специалиста с аналогичным опытом работы от 3-х лет;<br>
+                                        - Обязательно наличие всех документов для осуществления медицинской деятельности согласно действующего законодательства (Акушерство-гинекология и УЗИ).<br>
+                                        <br>
+                                        Основные условия:<br>
+                                        - Стабильная заработная плата (оклад + процент от приема);-<br>
+                                        <br>
+                                        График работы: сменный (обсуждается с каждым специалистом индивидуально);<br>
+                                        - Мы заботимся о вашем медицинском стаже
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vacancy__item" data-accordion>
+                            <div class="vacancy__top">
+                                <h3 class="vacancy__title">Врач ультразвуковой диагностики</h3>
+                                <svg class="vacancy__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-slim"></use>
+                                </svg>
+                            </div>
+                            <div class="vacancy__content">
+                                <div class="editor">
+                                    <p>
+                                        Локация:<br>
+                                        открыты вакансии в нескольких районах города Санкт-Петербург<br>
+                                        <br>
+                                        Обязанности:<br>
+                                        - Оказывать квалифицированную помощь пациентам гинекологического профиля;<br>
+                                        - Определять необходимость в дополнительных методах исследований<br>
+                                        - Определять тактики ведения больного в соответствии с установленными правилами и стандартами;<br>
+                                        - Ведение беременности.<br>
+                                        <br>
+                                        Требования:<br>
+                                        - Мы ищем грамотного специалиста с аналогичным опытом работы от 3-х лет;<br>
+                                        - Обязательно наличие всех документов для осуществления медицинской деятельности согласно действующего законодательства (Акушерство-гинекология и УЗИ).<br>
+                                        <br>
+                                        Основные условия:<br>
+                                        - Стабильная заработная плата (оклад + процент от приема);-<br>
+                                        <br>
+                                        График работы: сменный (обсуждается с каждым специалистом индивидуально);<br>
+                                        - Мы заботимся о вашем медицинском стаже
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vacancy__block">
+                    <h2 class="title mb-50">Административный персонал</h2>
+                    <div class="vacancy__wrapper">
+                        <div class="vacancy__item" data-accordion>
+                            <div class="vacancy__top">
+                                <h3 class="vacancy__title">Врач ультразвуковой диагностики</h3>
+                                <svg class="vacancy__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-slim"></use>
+                                </svg>
+                            </div>
+                            <div class="vacancy__content">
+                                <div class="editor">
+                                    <p>
+                                        Локация:<br>
+                                        открыты вакансии в нескольких районах города Санкт-Петербург<br>
+                                        <br>
+                                        Обязанности:<br>
+                                        - Оказывать квалифицированную помощь пациентам гинекологического профиля;<br>
+                                        - Определять необходимость в дополнительных методах исследований<br>
+                                        - Определять тактики ведения больного в соответствии с установленными правилами и стандартами;<br>
+                                        - Ведение беременности.<br>
+                                        <br>
+                                        Требования:<br>
+                                        - Мы ищем грамотного специалиста с аналогичным опытом работы от 3-х лет;<br>
+                                        - Обязательно наличие всех документов для осуществления медицинской деятельности согласно действующего законодательства (Акушерство-гинекология и УЗИ).<br>
+                                        <br>
+                                        Основные условия:<br>
+                                        - Стабильная заработная плата (оклад + процент от приема);-<br>
+                                        <br>
+                                        График работы: сменный (обсуждается с каждым специалистом индивидуально);<br>
+                                        - Мы заботимся о вашем медицинском стаже
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vacancy__item" data-accordion>
+                            <div class="vacancy__top">
+                                <h3 class="vacancy__title">Врач ультразвуковой диагностики</h3>
+                                <svg class="vacancy__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-slim"></use>
+                                </svg>
+                            </div>
+                            <div class="vacancy__content">
+                                <div class="editor">
+                                    <p>
+                                        Локация:<br>
+                                        открыты вакансии в нескольких районах города Санкт-Петербург<br>
+                                        <br>
+                                        Обязанности:<br>
+                                        - Оказывать квалифицированную помощь пациентам гинекологического профиля;<br>
+                                        - Определять необходимость в дополнительных методах исследований<br>
+                                        - Определять тактики ведения больного в соответствии с установленными правилами и стандартами;<br>
+                                        - Ведение беременности.<br>
+                                        <br>
+                                        Требования:<br>
+                                        - Мы ищем грамотного специалиста с аналогичным опытом работы от 3-х лет;<br>
+                                        - Обязательно наличие всех документов для осуществления медицинской деятельности согласно действующего законодательства (Акушерство-гинекология и УЗИ).<br>
+                                        <br>
+                                        Основные условия:<br>
+                                        - Стабильная заработная плата (оклад + процент от приема);-<br>
+                                        <br>
+                                        График работы: сменный (обсуждается с каждым специалистом индивидуально);<br>
+                                        - Мы заботимся о вашем медицинском стаже
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vacancy__item" data-accordion>
+                            <div class="vacancy__top">
+                                <h3 class="vacancy__title">Врач ультразвуковой диагностики</h3>
+                                <svg class="vacancy__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-slim"></use>
+                                </svg>
+                            </div>
+                            <div class="vacancy__content">
+                                <div class="editor">
+                                    <p>
+                                        Локация:<br>
+                                        открыты вакансии в нескольких районах города Санкт-Петербург<br>
+                                        <br>
+                                        Обязанности:<br>
+                                        - Оказывать квалифицированную помощь пациентам гинекологического профиля;<br>
+                                        - Определять необходимость в дополнительных методах исследований<br>
+                                        - Определять тактики ведения больного в соответствии с установленными правилами и стандартами;<br>
+                                        - Ведение беременности.<br>
+                                        <br>
+                                        Требования:<br>
+                                        - Мы ищем грамотного специалиста с аналогичным опытом работы от 3-х лет;<br>
+                                        - Обязательно наличие всех документов для осуществления медицинской деятельности согласно действующего законодательства (Акушерство-гинекология и УЗИ).<br>
+                                        <br>
+                                        Основные условия:<br>
+                                        - Стабильная заработная плата (оклад + процент от приема);-<br>
+                                        <br>
+                                        График работы: сменный (обсуждается с каждым специалистом индивидуально);<br>
+                                        - Мы заботимся о вашем медицинском стаже
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<%= htmlWebpackPlugin.options.sectionFooter %>
+
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+
+</html>

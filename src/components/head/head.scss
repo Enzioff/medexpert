@@ -1,0 +1,17 @@
+.head {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  &--control {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    @include r(1200) {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+}
